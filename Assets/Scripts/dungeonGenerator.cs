@@ -20,7 +20,7 @@ public class dungeonGenerator : MonoBehaviour
             rooms.Add(new Rect(point,size));
         }
 
-        Instantiate(room.);
+        Instantiate(room);
 
 
 
