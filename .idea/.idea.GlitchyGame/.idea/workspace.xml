@@ -2,42 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e462fa0d-bbef-44af-ad2a-33bd6c85b326" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.vs/GlitchyGame/v16/Server/sqlite3/storage.ide-shm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vs/GlitchyGame/v16/Server/sqlite3/storage.ide-wal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/player_knight_animcontrol.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/player_knight_idleleft_anim.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/player_knight_idleleft_anim.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/player_knight_idleright_anim.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/player_knight_idleright_anim.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/player_knight_walkleft_anim.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/player_knight_walkright_anim.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/metadata/3d/3d9798e7b97d41d4ea93fc28d28edc44" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/metadata/3d/3d9798e7b97d41d4ea93fc28d28edc44.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/metadata/8b/8b99629e8e8857e4789088acb7acc8ee" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/metadata/8b/8b99629e8e8857e4789088acb7acc8ee.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/metadata/ad/ad5cecf9b56ce0440aa8f9f74b794f13" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/metadata/ad/ad5cecf9b56ce0440aa8f9f74b794f13.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/metadata/dd/dde75cfb61a911447b4268713e9e704e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Library/metadata/dd/dde75cfb61a911447b4268713e9e704e.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/playerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/playerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Spritesheets/player_knight_0.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Spritesheets/player_knight_0.controller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/player_knight_animcontrol.controller.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Spritesheets/player_knight_anim.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/player_knight_walkright_anim.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Spritesheets/player_knight_anim.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/player_knight_walkleft_anim.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Room.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Room.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GlitchyGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GlitchyGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DungeonGeneration.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DungeonGeneration.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/dungeonGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/dungeonGenerator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentMaximizeLayout.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProtocolInstance.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/04e3a4-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/04e3a4-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/a8ed6c-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/a8ed6c-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/91/9148c57561f38f149a812b95c9384420" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/91/9148c57561f38f149a812b95c9384420" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/a8/a85c3e75bb36aec49974975c641f106d" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/a8/a85c3e75bb36aec49974975c641f106d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/a8/a85c3e75bb36aec49974975c641f106d.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/a8/a85c3e75bb36aec49974975c641f106d.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/f8/f83cdbe71c3a6cb4f98aea4207dce4be" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/87/87f948fa8aaf5b34da07b12c5415ba4a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/f8/f83cdbe71c3a6cb4f98aea4207dce4be.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/87/87f948fa8aaf5b34da07b12c5415ba4a.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/ed/ed2f8dcc34b324ffe9f028685da37b81" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ed/ed2f8dcc34b324ffe9f028685da37b81" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" beforeDir="false" afterPath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -119,6 +100,7 @@
       <updated>1569004231261</updated>
       <workItem from="1569004239555" duration="770000" />
       <workItem from="1569007787713" duration="1698000" />
+      <workItem from="1569010569846" duration="3015000" />
     </task>
     <servers />
   </component>
