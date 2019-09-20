@@ -11,6 +11,7 @@ public class playerController : MonoBehaviour {
     private Animator anim;
     private Rigidbody2D body;
     [SerializeField] private bool isMoving;
+    public float facing;
 
     void Start() {
         anim = GetComponent<Animator>();
@@ -22,13 +23,21 @@ public class playerController : MonoBehaviour {
         isMoving = false;
         body.velocity = new Vector2(0, 0);
 
-        //Check to see if there is actually input
+        //get user input
         float input_x = Input.GetAxisRaw("Horizontal");
         float input_y = Input.GetAxisRaw("Vertical");
+
+        //Check to see if there is actually input
         if (Math.Abs(input_x) > INPUT_THRESHHOLD || Math.Abs(input_y) > INPUT_THRESHHOLD) {
             body.velocity = new Vector2(input_x * move_speed, input_y * move_speed);
             isMoving = true;
         }
 
+        //tell the animator to flip player depending on position of mouse
+        facing = Input.mousePosition.x < Screen.width / 2 ? -1 : 1;
+        
+        //update anim
+        anim.SetFloat("Facing", facing);
+        anim.SetBool("isMoving", isMoving);
     }
 }
