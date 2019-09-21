@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 878960906}
   - component: {fileID: 878960907}
   m_Layer: 0
-  m_Name: DungeonGeneration
+  m_Name: Dungeon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -246,5 +246,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed2f8dcc34b324ffe9f028685da37b81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: {fileID: 802094483051153174, guid: 762d48e4d93c44e539c859c269744fe7, type: 3}
+  roomPrefab: {fileID: 0}
   num: 100
