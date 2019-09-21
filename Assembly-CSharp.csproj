@@ -58,6 +58,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\dungeonGenerator.cs" />
      <Compile Include="Assets\Scripts\playerController.cs" />
+     <Compile Include="Assets\Scripts\Room.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/nithinmuthukumar/Documents/GitHub/GlitchyGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
