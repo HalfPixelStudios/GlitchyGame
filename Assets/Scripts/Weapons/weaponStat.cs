@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class weaponStat : MonoBehaviour {
 
+
     void Start() {
-        
+
     }
 
     void Update() {
-        
+  
     }
 }
