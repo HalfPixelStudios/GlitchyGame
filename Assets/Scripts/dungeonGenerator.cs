@@ -27,9 +27,10 @@ public class dungeonGenerator : MonoBehaviour
             
             
             GameObject r=Instantiate(room);
-            r.GetComponent<BoxCollider2D>().size=new Vector2(Random.Range(3,10),Random.Range(3,10));
+            BoxCollider2D bc2d = r.GetComponent<BoxCollider2D>();
+            bc2d.size=new Vector2(Random.Range(3,10),Random.Range(3,10));
             r.GetComponent<Transform>().position=new Vector3(position.x,position.y,0);
-            mean += position.x * position.y;
+            mean += bc2d.size.x * bc2d.size.y;
             
             rooms.Add(r);
             
@@ -72,9 +73,18 @@ public class dungeonGenerator : MonoBehaviour
             foreach (GameObject room in rooms)
             {
                 BoxCollider2D bc2d = room.GetComponent<BoxCollider2D>();
-                if (bc2d.size.x * bc2d.size.y > mean * 1.25)
+                Debug.Log(bc2d.size.x*bc2d.size.y);
+                Debug.Log(mean*2);
+                if (bc2d.size.x * bc2d.size.y > mean*1.25 )
                 {
+                    
+                    
                     mainRooms.Add(room);
+                }
+                else
+                {
+                    Destroy(room);
+
                 }
                 
             }
