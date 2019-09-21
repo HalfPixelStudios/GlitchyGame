@@ -37,6 +37,6 @@ public class weaponController : MonoBehaviour {
 
     public void shootProjectile(float angle) { //create a new projectile object
         projectileController p = Instantiate(projectile, transform.position, transform.rotation).GetComponent<projectileController>();
-        p.angle = angle;
+        p.angle = angle; //set the angle the bullet travels at
     }
 }
