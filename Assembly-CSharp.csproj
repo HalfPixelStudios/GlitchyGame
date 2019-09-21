@@ -62,12 +62,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\cameraController.cs" />
+    <Compile Include="Assets\Scripts\Cam\cameraController.cs" />
     <Compile Include="Assets\Scripts\dungeonGenerator.cs" />
-    <Compile Include="Assets\Scripts\playerController.cs" />
-    <Compile Include="Assets\Scripts\playerStat.cs" />
-    <Compile Include="Assets\Scripts\weaponController.cs" />
-    <Compile Include="Assets\Scripts\weaponStat.cs" />
+    <Compile Include="Assets\Scripts\Player\playerController.cs" />
+    <Compile Include="Assets\Scripts\Player\playerStat.cs" />
+    <Compile Include="Assets\Scripts\Room.cs" />
+    <Compile Include="Assets\Scripts\Weapons\weaponController.cs" />
+    <Compile Include="Assets\Scripts\Weapons\weaponStat.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/mrpic/Desktop/GlitchyGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
