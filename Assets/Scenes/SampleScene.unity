@@ -213,6 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1767e385d6a1d1489fd13439bb4a04d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectile: {fileID: 0}
   owner: {fileID: 0}
   orbit_radius: 0.6
   follow_offset_x: 0
@@ -345,6 +346,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1767e385d6a1d1489fd13439bb4a04d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectile: {fileID: 908329775496595671, guid: e9603907400473144a2e49484df28226,
+    type: 3}
   owner: {fileID: 1892442145}
   orbit_radius: 0.8
   follow_offset_x: 0
@@ -505,6 +508,7 @@ GameObject:
   - component: {fileID: 1892442146}
   - component: {fileID: 1892442149}
   - component: {fileID: 1892442150}
+  - component: {fileID: 1892442151}
   m_Layer: 0
   m_Name: player_knight_0
   m_TagString: Untagged
@@ -609,7 +613,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   move_speed: 3
   isMoving: 0
-  facing: 0
+  mouse_angle: 0
 --- !u!50 &1892442150
 Rigidbody2D:
   serializedVersion: 4
@@ -631,3 +635,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1892442151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892442145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c767a80606812c9448a5bc3879f4e229, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  equiped_weapon: {fileID: 632925069}

@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class weaponController : MonoBehaviour {
 
+    public GameObject projectile;
+
     public GameObject owner;
     public float orbit_radius;
     [Range(-1f,1f)] public float follow_offset_x;
@@ -18,10 +20,10 @@ public class weaponController : MonoBehaviour {
 
         if (owner == null) { return; } //dont do anything is no one owns the weapon
 
-        //rotate weapon to direction of mouse
-        Vector2 mouse_pos = Input.mousePosition;
-        float mouse_angle = (float) Math.Atan2(mouse_pos.y-Screen.height/2, mouse_pos.x-Screen.width/2);
-        transform.rotation = Quaternion.Euler((float)(transform.rotation.x*180/Math.PI), (float)(transform.rotation.y*180/Math.PI), (float)(mouse_angle *180/Math.PI));
+        float mouse_angle = owner.GetComponent<playerController>().mouse_angle;
+
+        //roatate  weapon depending on where mouse is
+        transform.rotation = Quaternion.Euler((float)(transform.rotation.x * 180 / Math.PI), (float)(transform.rotation.y * 180 / Math.PI), (float)(mouse_angle * 180 / Math.PI));
 
         //weapon 'orbits' owner
         float new_x = (float)(owner.transform.position.x + orbit_radius*Math.Cos(mouse_angle) + follow_offset_x);
@@ -31,5 +33,10 @@ public class weaponController : MonoBehaviour {
         //transform.RotateAround(owner_pos, transform.forward, 2f);
         //Debug.Log(mouse_angle);
 
+    }
+
+    public void shootProjectile(float angle) { //create a new projectile object
+        projectileController p = Instantiate(projectile, transform.position, transform.rotation).GetComponent<projectileController>();
+        p.angle = angle;
     }
 }
