@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\Player\playerController.cs" />
      <Compile Include="Assets\Scripts\Player\playerStat.cs" />
      <Compile Include="Assets\Scripts\Room.cs" />
+     <Compile Include="Assets\Scripts\TileGenerator.cs" />
      <Compile Include="Assets\Scripts\Weapons\weaponController.cs" />
      <Compile Include="Assets\Scripts\Weapons\weaponStat.cs" />
  <Reference Include="Unity.Timeline.Editor">
