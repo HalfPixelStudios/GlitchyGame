@@ -11,9 +11,14 @@
           <e p="DungeonGenerator.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="playerController.cs" t="Include" />
+            <e p="playerInventory.cs" t="Include" />
             <e p="playerStat.cs" t="Include" />
           </e>
+          <e p="Projectile" t="Include">
+            <e p="projectileController.cs" t="Include" />
+          </e>
           <e p="Room.cs" t="Include" />
+          <e p="TileGenerator.cs" t="Include" />
           <e p="Weapons" t="Include">
             <e p="weaponController.cs" t="Include" />
             <e p="weaponStat.cs" t="Include" />
