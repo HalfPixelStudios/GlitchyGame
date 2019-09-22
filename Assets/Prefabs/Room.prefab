@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5046585582032695294}
   - component: {fileID: 6887514000118211712}
   - component: {fileID: 4787039394035893223}
-  - component: {fileID: 7990020338518258445}
+  - component: {fileID: 4839917040439015100}
   m_Layer: 0
   m_Name: Room
   m_TagString: Untagged
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61a207cda554443e8ac46cb7239cd0f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7990020338518258445
+--- !u!114 &4839917040439015100
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,3 +105,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39f8753384ed147d78e91f91d6967530, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tiles:
+  - {fileID: 2531141420996347582, guid: cd57c2ada155d41c1822587e2f31a10e, type: 3}
+  create: 0
