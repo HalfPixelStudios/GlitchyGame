@@ -2,18 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e462fa0d-bbef-44af-ad2a-33bd6c85b326" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GlitchyGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GlitchyGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/DungeonGeneration.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DungeonGeneration.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/dungeonGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/dungeonGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GlitchyGame.sln" beforeDir="false" afterPath="$PROJECT_DIR$/GlitchyGame.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProtocolInstance.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/04e3a4-762d48e4d93c44e539.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/04e3a4-762d48e4d93c44e539.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/04e3a4-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/04e3a4-mainStage.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/a8ed6c-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/a8ed6c-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/19/19fb74daafdb28d4895b006fe6d2747d.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/19/19fb74daafdb28d4895b006fe6d2747d.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/49/49cb770eb2094984d84605963eda40b9" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/49/49cb770eb2094984d84605963eda40b9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/73/73256d6766b5dc8488f7099fabe8634f" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/73/73256d6766b5dc8488f7099fabe8634f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/91/9148c57561f38f149a812b95c9384420" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/91/9148c57561f38f149a812b95c9384420" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/c7/c767a80606812c9448a5bc3879f4e229" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/c7/c767a80606812c9448a5bc3879f4e229" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/e1/e1767e385d6a1d1489fd13439bb4a04d" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e1/e1767e385d6a1d1489fd13439bb4a04d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/ed/ed2f8dcc34b324ffe9f028685da37b81" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ed/ed2f8dcc34b324ffe9f028685da37b81" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" beforeDir="false" afterPath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/e9/e9603907400473144a2e49484df28226" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e9/e9603907400473144a2e49484df28226" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/e9/e9603907400473144a2e49484df28226.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e9/e9603907400473144a2e49484df28226.info" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +34,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TileGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/dungeonGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Room.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -97,7 +107,7 @@
       <workItem from="1569004239555" duration="770000" />
       <workItem from="1569007787713" duration="1698000" />
       <workItem from="1569010569846" duration="9902000" />
-      <workItem from="1569095898741" duration="5979000" />
+      <workItem from="1569095898741" duration="6288000" />
     </task>
     <servers />
   </component>

@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class TileGenerator : MonoBehaviour
 {
+    private GameObject[] tiles;
     // Start is called before the first frame update
     void Start()
     {
+        
+        
         
     }
 
