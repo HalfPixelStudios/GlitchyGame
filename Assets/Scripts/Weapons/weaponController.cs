@@ -14,6 +14,8 @@ public class weaponController : MonoBehaviour {
     [Range(0f, 360f)] public float angle_offset; //in degrees
 
     void Start() {
+        //owner
+        Physics.IgnoreCollision(owner.GetComponent<Collider>(), gameObject.GetComponent<Collider>());
         orbit_radius = 0.8f;
     }
 

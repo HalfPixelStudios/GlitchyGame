@@ -35,7 +35,7 @@ public class playerController : MonoBehaviour {
 
         //Check to see if there is actually input
         if (Math.Abs(input_x) > INPUT_THRESHHOLD || Math.Abs(input_y) > INPUT_THRESHHOLD) {
-            body.velocity = new Vector2(input_x * move_speed, input_y * move_speed);
+            body.velocity = new Vector2(input_x , input_y ).normalized*move_speed;
             isMoving = true;
         }
 
