@@ -8,9 +8,10 @@ public class weaponController : MonoBehaviour {
     public GameObject projectile;
 
     public GameObject owner;
-    public float orbit_radius;
+    [Range(-3f, 3f)] public float orbit_radius;
     [Range(-1f,1f)] public float follow_offset_x;
     [Range(-1f, 1f)] public float follow_offset_y;
+    [Range(0f, 360f)] public float angle_offset; //in degrees
 
     void Start() {
         orbit_radius = 0.8f;
@@ -23,7 +24,7 @@ public class weaponController : MonoBehaviour {
         float mouse_angle = owner.GetComponent<playerController>().mouse_angle;
 
         //roatate  weapon depending on where mouse is
-        transform.rotation = Quaternion.Euler((float)(transform.rotation.x * 180 / Math.PI), (float)(transform.rotation.y * 180 / Math.PI), (float)(mouse_angle * 180 / Math.PI));
+        transform.rotation = Quaternion.Euler((float)(transform.rotation.x*180/Math.PI), (float)(transform.rotation.y*180/Math.PI), (float)(mouse_angle*180/Math.PI+angle_offset));
 
         //weapon 'orbits' owner
         float new_x = (float)(owner.transform.position.x + orbit_radius*Math.Cos(mouse_angle) + follow_offset_x);
