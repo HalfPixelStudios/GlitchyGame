@@ -23,24 +23,31 @@ public class weaponController : MonoBehaviour {
         //this is giving error for some reason
         //Physics.IgnoreCollision(owner.GetComponent<Collider>(), gameObject.GetComponent<Collider>());
         orbit_radius = 0.8f;
+
+        if (owner != null) { set_pickup_mode(owner);
+        } else { set_drop_mode(); }
     }
 
     void Update() {
 
-        if (owner == null) { return; } //dont do anything is no one owns the weapon
+        if (owner != null) {
 
-        float mouse_angle = owner.GetComponent<playerController>().mouse_angle; //change this to be more generic so it works with enemies too
+            float mouse_angle = owner.GetComponent<playerController>().mouse_angle; //change this to be more generic so it works with enemies too
 
-        //roatate  weapon depending on where mouse is
-        transform.rotation = Quaternion.Euler((float)(transform.rotation.x*180/Math.PI), (float)(transform.rotation.y*180/Math.PI), (float)(mouse_angle*180/Math.PI+angle_offset));
+            //roatate  weapon depending on where mouse is
+            transform.rotation = Quaternion.Euler((float)(transform.rotation.x * 180 / Math.PI), (float)(transform.rotation.y * 180 / Math.PI), (float)(mouse_angle * 180 / Math.PI + angle_offset));
 
-        //weapon 'orbits' owner
-        float new_x = (float)(owner.transform.position.x + orbit_radius*Math.Cos(mouse_angle) + follow_offset_x);
-        float new_y = (float)(owner.transform.position.y + orbit_radius*Math.Sin(mouse_angle) + follow_offset_y);
-        transform.position = new Vector3(new_x, new_y, owner.transform.position.z);
+            //weapon 'orbits' owner
+            float new_x = (float)(owner.transform.position.x + orbit_radius * Math.Cos(mouse_angle) + follow_offset_x);
+            float new_y = (float)(owner.transform.position.y + orbit_radius * Math.Sin(mouse_angle) + follow_offset_y);
+            transform.position = new Vector3(new_x, new_y, owner.transform.position.z);
 
-        //transform.RotateAround(owner_pos, transform.forward, 2f);
-        //Debug.Log(mouse_angle);
+            //transform.RotateAround(owner_pos, transform.forward, 2f);
+            //Debug.Log(mouse_angle);
+
+        } else { //if weapon does not have an owner, display it as a dropped item
+            transform.Rotate(0, 4f, 0); //cheesy rotating effect
+        }
 
     }
 
@@ -49,7 +56,24 @@ public class weaponController : MonoBehaviour {
         p.angle = angle; //set the angle the bullet travels at
     }
 
-    void OnCollisionEnter2D(Collision2D other) { //if the weapon hits an object
+    public void set_pickup_mode(GameObject new_owner) { //if the weapon is being used
+        owner = new_owner;
+
+        gameObject.layer = LayerMask.NameToLayer("Weapons");
+    }
+
+    public void set_drop_mode() { //if the weapon is no longer being used
+        owner = null;
+
+        gameObject.layer = LayerMask.NameToLayer("Dropped Items");
+
+        //create an object that detects if an entity is within the pickup range
+
+
+    }
+
+
+    private void OnCollisionEnter2D(Collision2D other) { //if the weapon hits an object
 
         healthComponent hp_comp = other.gameObject.GetComponent<healthComponent>();
         if (hp_comp != null) { //if the object the projectile hit has a health bar

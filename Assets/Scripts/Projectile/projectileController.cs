@@ -34,7 +34,7 @@ public class projectileController : MonoBehaviour {
         }
     }
 
-    void OnCollisionEnter2D(Collision2D other) { //if the projectile hits something
+    private void OnCollisionEnter2D(Collision2D other) { //if the projectile hits something
 
         Destroy(this.gameObject); //TODO: a projectile also has a penetration stat, so it might not die on first contact
 
