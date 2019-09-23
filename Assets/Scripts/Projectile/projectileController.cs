@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class projectileController : MonoBehaviour {
 
+    [Range(0f, 200f)] public float damage;
     [Range(0f, 30f)] public float speed;
     [Range(0f, 30f)] public float range;
 
@@ -37,6 +38,9 @@ public class projectileController : MonoBehaviour {
 
         Destroy(this.gameObject); //TODO: a projectile also has a penetration stat, so it might not die on first contact
 
-
+        healthComponent hp_comp = other.gameObject.GetComponent<healthComponent>();
+        if (hp_comp != null) { //if the object the projectile hit has a health bar
+            hp_comp.modHp(-1 * damage);
+        }
     }
 }

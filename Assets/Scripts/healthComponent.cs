@@ -19,6 +19,7 @@ public class healthComponent : MonoBehaviour {
         currentHealth += deltaHp;
         if (currentHealth <= 0) {
             Debug.Log("DEAD",gameObject);
+            Destroy(this.gameObject); //THIS IS VERY BAD, especially for players, fix later
         } else if (currentHealth > baseHealth) { currentHealth = baseHealth; } //cant go over max hp
     }
 

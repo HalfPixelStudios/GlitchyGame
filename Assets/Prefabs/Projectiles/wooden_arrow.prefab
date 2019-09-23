@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 908329775496595657}
   - component: {fileID: 908329775496595670}
-  - component: {fileID: 2915229804440057855}
   - component: {fileID: 366183842300245305}
+  - component: {fileID: 2915229804440057855}
   - component: {fileID: 7048312463979238274}
   m_Layer: 10
   m_Name: wooden_arrow
@@ -83,6 +83,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &366183842300245305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908329775496595671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49cb770eb2094984d84605963eda40b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 20
+  speed: 20
+  range: 10
+  body: {fileID: 0}
+  angle: 0
 --- !u!50 &2915229804440057855
 Rigidbody2D:
   serializedVersion: 4
@@ -104,22 +121,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &366183842300245305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 908329775496595671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49cb770eb2094984d84605963eda40b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 20
-  range: 10
-  body: {fileID: 0}
-  angle: 0
 --- !u!61 &7048312463979238274
 BoxCollider2D:
   m_ObjectHideFlags: 0

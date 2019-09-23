@@ -120,7 +120,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &235896498
+--- !u!1001 &289746420
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -135,12 +135,12 @@ PrefabInstance:
     - target: {fileID: 5749487858831140635, guid: bd8ca533a0dfa174db316f99c733d491,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.996203
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 5749487858831140635, guid: bd8ca533a0dfa174db316f99c733d491,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.9741797
+      value: -2.47
       objectReference: {fileID: 0}
     - target: {fileID: 5749487858831140635, guid: bd8ca533a0dfa174db316f99c733d491,
         type: 3}
@@ -194,11 +194,11 @@ PrefabInstance:
       objectReference: {fileID: 1892442145}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd8ca533a0dfa174db316f99c733d491, type: 3}
---- !u!1 &235896499 stripped
+--- !u!1 &289746421 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5749487858831140614, guid: bd8ca533a0dfa174db316f99c733d491,
     type: 3}
-  m_PrefabInstance: {fileID: 235896498}
+  m_PrefabInstance: {fileID: 289746420}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
@@ -461,7 +461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27178f5dd70ff304a9611c6b275cbf8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseHealth: 0
+  baseHealth: 100
   currentHealth: 0
 --- !u!1 &1681750424
 GameObject:
@@ -696,7 +696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c767a80606812c9448a5bc3879f4e229, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  equiped_weapon: {fileID: 235896499}
+  equiped_weapon: {fileID: 289746421}
 --- !u!61 &1892442152
 BoxCollider2D:
   m_ObjectHideFlags: 0

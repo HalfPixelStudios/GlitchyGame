@@ -5,10 +5,14 @@ using UnityEngine;
 
 public class weaponController : MonoBehaviour {
 
+    [Range(0f,200f)] public float melee_damage; //damage dealt when weapon hits entity
+
     public string weapon_type; //unused for now
     public GameObject projectile;
 
     public GameObject owner;
+
+    [Header("Graphics")]
     [Range(-3f, 3f)] public float orbit_radius;
     [Range(-1f,1f)] public float follow_offset_x;
     [Range(-1f, 1f)] public float follow_offset_y;
@@ -16,7 +20,8 @@ public class weaponController : MonoBehaviour {
 
     void Start() {
         //owner
-        Physics.IgnoreCollision(owner.GetComponent<Collider>(), gameObject.GetComponent<Collider>());
+        //this is giving error for some reason
+        //Physics.IgnoreCollision(owner.GetComponent<Collider>(), gameObject.GetComponent<Collider>());
         orbit_radius = 0.8f;
     }
 
@@ -42,5 +47,13 @@ public class weaponController : MonoBehaviour {
     public void shootProjectile(float angle) { //create a new projectile object
         projectileController p = Instantiate(projectile, transform.position, transform.rotation).GetComponent<projectileController>();
         p.angle = angle; //set the angle the bullet travels at
+    }
+
+    void OnCollisionEnter2D(Collision2D other) { //if the weapon hits an object
+
+        healthComponent hp_comp = other.gameObject.GetComponent<healthComponent>();
+        if (hp_comp != null) { //if the object the projectile hit has a health bar
+            hp_comp.modHp(-1 * melee_damage);
+        }
     }
 }
