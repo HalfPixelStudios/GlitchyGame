@@ -23,9 +23,9 @@ public class weaponController : MonoBehaviour {
 
     void Start() {
         body = GetComponent<Rigidbody2D>();
-        //owner
-        //this is giving error for some reason
-        //Physics.IgnoreCollision(owner.GetComponent<Collider>(), gameObject.GetComponent<Collider>());
+        
+        
+
         orbit_radius = 0.8f;
 
         if (owner != null) { set_pickup_mode(owner);
@@ -35,6 +35,10 @@ public class weaponController : MonoBehaviour {
     void Update() {
 
         if (owner != null) {
+            
+            //ignores collision
+            Physics.IgnoreCollision(owner.GetComponent<Collider>(), gameObject.GetComponent<Collider>());
+            
 
             float mouse_angle = owner.GetComponent<playerController>().mouse_angle; //change this to be more generic so it works with enemies too
 
@@ -89,10 +93,14 @@ public class weaponController : MonoBehaviour {
 
 
     private void OnCollisionEnter2D(Collision2D other) { //if the weapon hits an object
-
-        healthComponent hp_comp = other.gameObject.GetComponent<healthComponent>();
-        if (hp_comp != null) { //if the object the projectile hit has a health bar
-            hp_comp.modHp(-1 * melee_damage);
+        if (weapon_type != "range")
+        {
+            healthComponent hp_comp = other.gameObject.GetComponent<healthComponent>();
+            if (hp_comp != null)
+            {
+                //if the object the projectile hit has a health bar
+                hp_comp.modHp(-1 * melee_damage);
+            }
         }
     }
 }
