@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\Weapons\weaponCharge.cs" />
     <Compile Include="Assets\Scripts\Weapons\weaponController.cs" />
     <Compile Include="Assets\Scripts\Weapons\weaponStat.cs" />
+    <Compile Include="Assets\Scripts\weaponSheath.cs" />
     <None Include="Assets\GlitchShader.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/mrpic/Desktop/GlitchyGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
