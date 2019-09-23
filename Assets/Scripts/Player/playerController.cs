@@ -47,7 +47,6 @@ public class playerController : MonoBehaviour {
         anim.SetBool("isMoving", isMoving);
 
         if (Input.GetKeyDown("q")) {
-            Debug.Log("pressed q");
             GameObject weapon = GetComponent<playerInventory>().equiped_weapon;
             weapon.GetComponent<weaponController>().shootProjectile(mouse_angle);
         }

@@ -45,6 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickup_radius: 1.5
+  offset_x: 0
+  offset_y: 1
 --- !u!58 &5819221918909883230
 CircleCollider2D:
   m_ObjectHideFlags: 0

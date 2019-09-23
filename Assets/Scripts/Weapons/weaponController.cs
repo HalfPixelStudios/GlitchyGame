@@ -18,8 +18,11 @@ public class weaponController : MonoBehaviour {
     [Range(-1f, 1f)] public float follow_offset_y;
     [Range(0f, 360f)] public float angle_offset; //in degrees
 
+    private GameObject pickup;
+    private Rigidbody2D body;
 
     void Start() {
+        body = GetComponent<Rigidbody2D>();
         //owner
         //this is giving error for some reason
         //Physics.IgnoreCollision(owner.GetComponent<Collider>(), gameObject.GetComponent<Collider>());
@@ -39,8 +42,9 @@ public class weaponController : MonoBehaviour {
             transform.rotation = Quaternion.Euler((float)(transform.rotation.x * 180 / Math.PI), (float)(transform.rotation.y * 180 / Math.PI), (float)(mouse_angle * 180 / Math.PI + angle_offset));
 
             //weapon 'orbits' owner
-            float new_x = (float)(owner.transform.position.x + orbit_radius * Math.Cos(mouse_angle) + follow_offset_x);
-            float new_y = (float)(owner.transform.position.y + orbit_radius * Math.Sin(mouse_angle) + follow_offset_y);
+            //HARDCODED ORBIT RAIDUS AS 1 FOR NOW
+            float new_x = (float)(owner.transform.position.x + 1 * Math.Cos(mouse_angle) + follow_offset_x);
+            float new_y = (float)(owner.transform.position.y + 1 * Math.Sin(mouse_angle) + follow_offset_y);
             transform.position = new Vector3(new_x, new_y, owner.transform.position.z);
 
             //transform.RotateAround(owner_pos, transform.forward, 2f);
@@ -60,17 +64,27 @@ public class weaponController : MonoBehaviour {
     public void set_pickup_mode(GameObject new_owner) { //if the weapon is being used
         owner = new_owner;
 
+        //set equipped item as this weapon
+        new_owner.GetComponent<playerInventory>().equiped_weapon = this.gameObject;
+        
         gameObject.layer = LayerMask.NameToLayer("Weapons");
+        body.isKinematic = true;
+        body.freezeRotation = false;
+
+        Destroy(pickup);
     }
 
     public void set_drop_mode() { //if the weapon is no longer being used
         owner = null;
 
         gameObject.layer = LayerMask.NameToLayer("Dropped Items");
+        body.isKinematic = false; //just make sure there is no force when the item is dropped
+        body.freezeRotation = true;
+        transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, 0f);
 
         //create an object that detects if an entity is within the pickup range
-        Instantiate(Resources.Load("Objects/pickup_detector") as GameObject, transform.position, transform.rotation);
-
+        pickup = Instantiate(Resources.Load("Objects/pickup_detector") as GameObject, transform.position, transform.rotation);
+        pickup.GetComponent<pickupDetector>().weapon = this.gameObject;
     }
 
 
