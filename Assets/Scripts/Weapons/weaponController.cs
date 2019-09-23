@@ -18,6 +18,7 @@ public class weaponController : MonoBehaviour {
     [Range(-1f, 1f)] public float follow_offset_y;
     [Range(0f, 360f)] public float angle_offset; //in degrees
 
+
     void Start() {
         //owner
         //this is giving error for some reason
@@ -68,7 +69,7 @@ public class weaponController : MonoBehaviour {
         gameObject.layer = LayerMask.NameToLayer("Dropped Items");
 
         //create an object that detects if an entity is within the pickup range
-
+        Instantiate(Resources.Load("Objects/pickup_detector") as GameObject, transform.position, transform.rotation);
 
     }
 

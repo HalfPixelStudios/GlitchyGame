@@ -5,7 +5,8 @@ using UnityEngine;
 public class pickupDetector : MonoBehaviour {
 
     [Range(0f, 5f)] public float pickup_radius;
-    public GameObject dropped_item_arrow;
+    [Range(-1f, 1f)] public float offset_x;
+    [Range(-1f, 1f)] public float offset_y;
     private GameObject arrow;
 
     void Start() {
@@ -16,8 +17,8 @@ public class pickupDetector : MonoBehaviour {
 
     private void OnTriggerEnter2D (Collider2D other) {
         //show hovering arrow
-        Debug.Log("Entered collision zone");
-        arrow = Instantiate(dropped_item_arrow, transform.position, transform.rotation);
+        //Debug.Log(Resources.Load("dropped_item_arrow") as GameObject);
+        arrow = Instantiate(Resources.Load("UI/dropped_item_arrow") as GameObject, transform.position, transform.rotation);
     }
 
     private void OnTriggerExit2D(Collider2D other) {
