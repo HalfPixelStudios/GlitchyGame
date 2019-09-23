@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class weaponController : MonoBehaviour {
 
+    public string weapon_type; //unused for now
     public GameObject projectile;
 
     public GameObject owner;
@@ -23,7 +24,7 @@ public class weaponController : MonoBehaviour {
 
         if (owner == null) { return; } //dont do anything is no one owns the weapon
 
-        float mouse_angle = owner.GetComponent<playerController>().mouse_angle;
+        float mouse_angle = owner.GetComponent<playerController>().mouse_angle; //change this to be more generic so it works with enemies too
 
         //roatate  weapon depending on where mouse is
         transform.rotation = Quaternion.Euler((float)(transform.rotation.x*180/Math.PI), (float)(transform.rotation.y*180/Math.PI), (float)(mouse_angle*180/Math.PI+angle_offset));

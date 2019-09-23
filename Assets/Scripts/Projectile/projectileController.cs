@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class projectileController : MonoBehaviour {
 
-    [Range(0f, 10f)] public float speed;
-    [Range(0f, 10f)] public float range;
+    [Range(0f, 30f)] public float speed;
+    [Range(0f, 30f)] public float range;
 
     public Rigidbody2D body;
     public float angle;
@@ -15,7 +15,8 @@ public class projectileController : MonoBehaviour {
 
     void Start() {
         body = GetComponent<Rigidbody2D>();
-        body.velocity = new Vector2((float)(speed*Math.Cos(angle)), (float)(speed*Math.Sin(angle)));
+        body.velocity = new Vector2((float)(speed * Math.Cos(angle)), (float)(speed * Math.Sin(angle)));
+        transform.rotation = Quaternion.Euler((float)(transform.rotation.x * 180 / Math.PI), (float)(transform.rotation.y * 180 / Math.PI), (float)(angle * 180 / Math.PI));
         start_position = transform.position;
     }
 
@@ -24,7 +25,7 @@ public class projectileController : MonoBehaviour {
         //check to see if projectile exceeded its max range
         float x = transform.position.x - start_position.x;
         float y = transform.position.y - start_position.y;
-        float dist_travelled = (float)(Math.Pow(Math.Pow(x,2f)+Math.Pow(y,2f),0.5f));
+        float dist_travelled = (float)(Math.Pow(Math.Pow(x, 2f) + Math.Pow(y, 2f), 0.5f));
 
         if (dist_travelled > range) {
             //DESTROYYYYY
@@ -32,6 +33,10 @@ public class projectileController : MonoBehaviour {
         }
     }
 
-    
-    
+    void OnCollisionEnter2D(Collision2D other) { //if the projectile hits something
+
+        Destroy(this.gameObject); //TODO: a projectile also has a penetration stat, so it might not die on first contact
+
+
+    }
 }

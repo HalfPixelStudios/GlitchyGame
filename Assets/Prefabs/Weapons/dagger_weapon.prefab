@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4886570305673881977}
   - component: {fileID: 6927120226529924334}
   - component: {fileID: -7362937782863601311}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: dagger_weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,11 +95,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1767e385d6a1d1489fd13439bb4a04d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weapon_type: 
   projectile: {fileID: 0}
   owner: {fileID: 0}
   orbit_radius: 0.6
   follow_offset_x: 0
   follow_offset_y: -0.5
+  angle_offset: 0
 --- !u!50 &6927120226529924334
 Rigidbody2D:
   serializedVersion: 4
