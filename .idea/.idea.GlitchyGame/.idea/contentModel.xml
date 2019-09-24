@@ -20,7 +20,6 @@
           <e p="Player" t="Include">
             <e p="inputHandler.cs" t="Include" />
             <e p="playerController.cs" t="Include" />
-            <e p="playerInventory.cs" t="Include" />
             <e p="playerStat.cs" t="Include" />
           </e>
           <e p="Projectile" t="Include">
@@ -34,6 +33,7 @@
             <e p="weaponController.cs" t="Include" />
             <e p="weaponStat.cs" t="Include" />
           </e>
+          <e p="weaponSheath.cs" t="Include" />
         </e>
       </e>
       <e p="GlitchyGame.sln" t="IncludeFlat" />

@@ -65,7 +65,6 @@
      <Compile Include="Assets\Scripts\healthComponent.cs" />
      <Compile Include="Assets\Scripts\Player\inputHandler.cs" />
      <Compile Include="Assets\Scripts\Player\playerController.cs" />
-     <Compile Include="Assets\Scripts\Player\playerInventory.cs" />
      <Compile Include="Assets\Scripts\Player\playerStat.cs" />
      <Compile Include="Assets\Scripts\Projectile\projectileController.cs" />
      <Compile Include="Assets\Scripts\Room.cs" />
@@ -74,6 +73,7 @@
      <Compile Include="Assets\Scripts\Weapons\weaponCharge.cs" />
      <Compile Include="Assets\Scripts\Weapons\weaponController.cs" />
      <Compile Include="Assets\Scripts\Weapons\weaponStat.cs" />
+     <Compile Include="Assets\Scripts\weaponSheath.cs" />
      <None Include="Assets\GlitchShader.shader" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>/Users/nithinmuthukumar/Documents/GitHub/GlitchyGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
