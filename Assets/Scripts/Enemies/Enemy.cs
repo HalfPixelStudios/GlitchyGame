@@ -28,7 +28,7 @@ public class Enemy : MonoBehaviour
         }
         else
         {
-            attack = false;
+            detected = false;
         }
 
         if (dist < attack_range)
