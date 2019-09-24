@@ -29,6 +29,8 @@ public class Enemy : MonoBehaviour
         else
         {
             detected = false;
+            //just in case sight is greater than attack for some stupid reason
+            attack = false;
         }
 
         if (dist < attack_range)
