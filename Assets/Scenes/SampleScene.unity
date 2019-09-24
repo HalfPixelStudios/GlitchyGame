@@ -135,12 +135,12 @@ PrefabInstance:
     - target: {fileID: 5749487858831140635, guid: bd8ca533a0dfa174db316f99c733d491,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.1
+      value: -4.1
       objectReference: {fileID: 0}
     - target: {fileID: 5749487858831140635, guid: bd8ca533a0dfa174db316f99c733d491,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.47
+      value: -4.13
       objectReference: {fileID: 0}
     - target: {fileID: 5749487858831140635, guid: bd8ca533a0dfa174db316f99c733d491,
         type: 3}
@@ -308,6 +308,7 @@ GameObject:
   m_Component:
   - component: {fileID: 577345102}
   - component: {fileID: 577345105}
+  - component: {fileID: 577345106}
   - component: {fileID: 577345101}
   - component: {fileID: 577345100}
   - component: {fileID: 577345103}
@@ -463,6 +464,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseHealth: 100
   currentHealth: 0
+--- !u!114 &577345106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577345099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef639d68b3bbc404c9c2710a3e952c35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  equiped_weapon: {fileID: 2145332797}
+  weapon_angle: 0
 --- !u!1001 &1084861348
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -478,7 +493,7 @@ PrefabInstance:
     - target: {fileID: 4886570305673881976, guid: 0780cf1ee090eed46a6380187acedef8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.87
+      value: -3.85
       objectReference: {fileID: 0}
     - target: {fileID: 4886570305673881976, guid: 0780cf1ee090eed46a6380187acedef8,
         type: 3}
@@ -530,6 +545,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4886570305673881977, guid: 0780cf1ee090eed46a6380187acedef8,
+        type: 3}
+      propertyPath: owner
+      value: 
+      objectReference: {fileID: 577345099}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0780cf1ee090eed46a6380187acedef8, type: 3}
 --- !u!1 &1681750424
@@ -624,8 +644,8 @@ GameObject:
   - component: {fileID: 1892442147}
   - component: {fileID: 1892442146}
   - component: {fileID: 1892442149}
-  - component: {fileID: 1892442153}
   - component: {fileID: 1892442151}
+  - component: {fileID: 1892442153}
   - component: {fileID: 1892442150}
   - component: {fileID: 1892442152}
   m_Layer: 8
@@ -763,10 +783,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1892442145}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c767a80606812c9448a5bc3879f4e229, type: 3}
+  m_Script: {fileID: 11500000, guid: ef639d68b3bbc404c9c2710a3e952c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   equiped_weapon: {fileID: 289746421}
+  weapon_angle: 0
 --- !u!61 &1892442152
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -876,3 +897,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 714e679ddbba896448a0dd5003d21e66, type: 3}
+--- !u!1 &2145332797 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4886570305673881978, guid: 0780cf1ee090eed46a6380187acedef8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1084861348}
+  m_PrefabAsset: {fileID: 0}
