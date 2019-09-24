@@ -16,6 +16,7 @@
             <e p="Enemy.cs" t="Include" />
             <e p="skeletController.cs" t="Include" />
           </e>
+          <e p="Golem.cs" t="Include" />
           <e p="healthComponent.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="inputHandler.cs" t="Include" />

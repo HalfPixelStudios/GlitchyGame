@@ -2,35 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e462fa0d-bbef-44af-ad2a-33bd6c85b326" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/golem/ATTACK.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/golem/ATTACK.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/golem/IDLE.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/golem/IDLE.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GlitchyGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GlitchyGame/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Golem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GlitchyGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GlitchyGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/golem/RIGHT.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/golem/RIGHT.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/golem/WALK.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/golem/WALK.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GlitchyGame.sln" beforeDir="false" afterPath="$PROJECT_DIR$/GlitchyGame.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProtocolInstance.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/4b6478-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/4b6478-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/eb7d53-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/eb7d53-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/81/81f908048deaa40e3802180b99a8bb03" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/81/81f908048deaa40e3802180b99a8bb03" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/81/81f908048deaa40e3802180b99a8bb03.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/81/81f908048deaa40e3802180b99a8bb03.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/91/9148c57561f38f149a812b95c9384420" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/91/9148c57561f38f149a812b95c9384420" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/c1/c1a8e19e88561294bace305fa636a9e2" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/c1/c1a8e19e88561294bace305fa636a9e2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/e1/e1767e385d6a1d1489fd13439bb4a04d" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e1/e1767e385d6a1d1489fd13439bb4a04d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/e7/e7a64bd2cd5df4ff5b32b0b79274e7f8" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e7/e7a64bd2cd5df4ff5b32b0b79274e7f8" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/e7/e7a64bd2cd5df4ff5b32b0b79274e7f8.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e7/e7a64bd2cd5df4ff5b32b0b79274e7f8.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/ef/ef639d68b3bbc404c9c2710a3e952c35" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/ef/ef639d68b3bbc404c9c2710a3e952c35" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" beforeDir="false" afterPath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
@@ -54,9 +36,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/weaponStat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/weaponController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GlitchShader.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/weaponSheath.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TileGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/skeletController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Golem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Projectile/projectileController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/weaponCharge.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -75,6 +59,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/weaponController.cs" />
         <option value="$PROJECT_DIR$/Assets/GlitchShader.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Golem.cs" />
       </list>
     </option>
   </component>
@@ -143,8 +128,16 @@
       <workItem from="1569173674543" duration="531000" />
       <workItem from="1569177479655" duration="6753000" />
       <workItem from="1569186573312" duration="2720000" />
-      <workItem from="1569281222083" duration="3720000" />
+      <workItem from="1569281222083" duration="4486000" />
     </task>
+    <task id="LOCAL-00001" summary="tt">
+      <created>1569287172071</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569287172071</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +161,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+    <MESSAGE value="tt" />
+    <option name="LAST_COMMIT_MESSAGE" value="tt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
