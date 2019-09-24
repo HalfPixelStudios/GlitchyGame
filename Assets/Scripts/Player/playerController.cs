@@ -12,9 +12,6 @@ public class playerController : MonoBehaviour {
     private Rigidbody2D body;
     private weaponSheath weapon_sheath;
     [SerializeField] private bool isMoving;
-    private float facing;
-    public float mouse_angle;
-
 
     void Start() {
         anim = GetComponent<Animator>();
@@ -26,7 +23,7 @@ public class playerController : MonoBehaviour {
 
         //find mouse rotation
         Vector2 mouse_pos = Input.mousePosition;
-        mouse_angle = (float)Math.Atan2(mouse_pos.y - Screen.height / 2, mouse_pos.x - Screen.width / 2);
+        float mouse_angle = (float)Math.Atan2(mouse_pos.y - Screen.height / 2, mouse_pos.x - Screen.width / 2);
 
         isMoving = false;
         body.velocity = new Vector2(0, 0);
@@ -42,7 +39,7 @@ public class playerController : MonoBehaviour {
         }
 
         //tell the animator to flip player depending on position of mouse
-        facing = mouse_pos.x < Screen.width / 2 ? -1 : 1;
+        float facing = mouse_pos.x < Screen.width / 2 ? -1 : 1;
         
         //update anim
         anim.SetFloat("Facing", facing);
