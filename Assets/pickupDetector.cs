@@ -26,7 +26,7 @@ public class pickupDetector : MonoBehaviour {
     private void OnTriggerStay2D(Collider2D other) {
         if (Input.GetKeyDown("e")) { //pickup button
 
-            weaponController old_weapon = other.gameObject.GetComponent<playerInventory>().equiped_weapon.GetComponent<weaponController>();
+            weaponController old_weapon = other.gameObject.GetComponent<weaponSheath>().equiped_weapon.GetComponent<weaponController>();
 
             if (old_weapon != null) { //if the owner had a previous item, drop that item
                 old_weapon.set_drop_mode();

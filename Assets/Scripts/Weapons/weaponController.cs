@@ -36,15 +36,15 @@ public class weaponController : MonoBehaviour {
 
         if (owner != null) {
 
-            float mouse_angle = owner.GetComponent<playerController>().mouse_angle; //change this to be more generic so it works with enemies too
+            float weapon_angle = owner.GetComponent<weaponSheath>().weapon_angle; //change this to be more generic so it works with enemies too
 
             //roatate  weapon depending on where mouse is
-            transform.rotation = Quaternion.Euler((float)(transform.rotation.x * 180 / Math.PI), (float)(transform.rotation.y * 180 / Math.PI), (float)(mouse_angle * 180 / Math.PI + angle_offset));
+            transform.rotation = Quaternion.Euler((float)(transform.rotation.x * 180 / Math.PI), (float)(transform.rotation.y * 180 / Math.PI), (float)(weapon_angle * 180 / Math.PI + angle_offset));
 
             //weapon 'orbits' owner
             //HARDCODED ORBIT RAIDUS AS 1 FOR NOW
-            float new_x = (float)(owner.transform.position.x + 1 * Math.Cos(mouse_angle) + follow_offset_x);
-            float new_y = (float)(owner.transform.position.y + 1 * Math.Sin(mouse_angle) + follow_offset_y);
+            float new_x = (float)(owner.transform.position.x + 1 * Math.Cos(weapon_angle) + follow_offset_x);
+            float new_y = (float)(owner.transform.position.y + 1 * Math.Sin(weapon_angle) + follow_offset_y);
             transform.position = new Vector3(new_x, new_y, owner.transform.position.z);
 
             //transform.RotateAround(owner_pos, transform.forward, 2f);
@@ -56,16 +56,16 @@ public class weaponController : MonoBehaviour {
 
     }
 
-    public void shootProjectile(float angle) { //create a new projectile object
+    public void shootProjectile() { //create a new projectile object
         projectileController p = Instantiate(projectile, transform.position, transform.rotation).GetComponent<projectileController>();
-        p.angle = angle; //set the angle the bullet travels at
+        p.angle = owner.GetComponent<weaponSheath>().weapon_angle; //set the angle the bullet travels at
     }
 
     public void set_pickup_mode(GameObject new_owner) { //if the weapon is being used
         owner = new_owner;
 
         //set equipped item as this weapon
-        new_owner.GetComponent<playerInventory>().equiped_weapon = this.gameObject;
+        new_owner.GetComponent<weaponSheath>().equiped_weapon = this.gameObject;
         
         gameObject.layer = LayerMask.NameToLayer("Weapons");
         body.isKinematic = true;

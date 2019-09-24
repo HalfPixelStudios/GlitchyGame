@@ -10,6 +10,7 @@ public class playerController : MonoBehaviour {
 
     private Animator anim;
     private Rigidbody2D body;
+    private weaponSheath weapon_sheath;
     [SerializeField] private bool isMoving;
     private float facing;
     public float mouse_angle;
@@ -18,6 +19,7 @@ public class playerController : MonoBehaviour {
     void Start() {
         anim = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
+        weapon_sheath = GetComponent<weaponSheath>();
     }
 
     void Update() {
@@ -46,9 +48,11 @@ public class playerController : MonoBehaviour {
         anim.SetFloat("Facing", facing);
         anim.SetBool("isMoving", isMoving);
 
+        //weapon stuff
+        weapon_sheath.weapon_angle = mouse_angle;
         if (Input.GetKeyDown("q")) {
-            GameObject weapon = GetComponent<playerInventory>().equiped_weapon;
-            weapon.GetComponent<weaponController>().shootProjectile(mouse_angle);
+            GameObject weapon = GetComponent<weaponSheath>().equiped_weapon;
+            weapon.GetComponent<weaponController>().shootProjectile();
         }
     }
 }
