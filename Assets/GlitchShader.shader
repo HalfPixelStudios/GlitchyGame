@@ -26,12 +26,12 @@ Shader "Sprites/Glitch"
 		[PerRendererData] _MainTex ("Sprite Texture", 2D) = "white" {}
 		
 		_Color ("Tint", Color) = (1,1,1,1)
-		[MaterialToggle] PixelSnap ("Pixel snap", Float) = 0
-		_GlitchInterval ("Glitch interval time [seconds]", Float) = 1
+		[MaterialToggle] PixelSnap ("Pixel snap", Float) = 0.2
+		_GlitchInterval ("Glitch interval time [seconds]", Float) = 0
 		_DispProbability ("Displacement Glitch Probability", Float) = 1
-		_DispIntensity ("Displacement Glitch Intensity", Float) = 0.09
+		_DispIntensity ("Displacement Glitch Intensity", Float) = 1
 		_ColorProbability("Color Glitch Probability", Float) = 1
-		_ColorIntensity("Color Glitch Intensity", Float) = 0.07
+		_ColorIntensity("Color Glitch Intensity", Float) = 1
 		[MaterialToggle] _WrapDispCoords ("Wrap disp glitch (off = clamp)", Float) = 1
 		[MaterialToggle] _DispGlitchOn ("Displacement Glitch On", Float) = 1
 		[MaterialToggle] _ColorGlitchOn ("Color Glitch On", Float) = 1

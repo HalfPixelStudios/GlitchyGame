@@ -2,8 +2,76 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e462fa0d-bbef-44af-ad2a-33bd6c85b326" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/weaponController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/weaponController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/golem.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/golem/Attack.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/golem/Attack.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/golem/Attack_0.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/golem/Attack_0.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/golem/IDLE.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/golem/IDLE.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/golem/RIGHT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/golem/RIGHT.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/golem/WALK.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/golem/WALK.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GlitchEffect.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GlitchEffect.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GlitchyGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GlitchyGame/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GlitchyGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GlitchyGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GlitchShader.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GlitchShader.shader" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Material.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/EditorInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/EditorInstance.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProtocolInstance.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/4b6478-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/4b6478-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/eb7d53-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/eb7d53-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/a9/a94005716c2f4437db64d26a149979e9" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/a9/a94005716c2f4437db64d26a149979e9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/c8/c87d37ea9d9144738bd97e8109596928" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/c8/c87d37ea9d9144738bd97e8109596928" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/c8/c87d37ea9d9144738bd97e8109596928.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/c8/c87d37ea9d9144738bd97e8109596928.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler2.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler2.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler3.log" beforeDir="false" afterPath="$PROJECT_DIR$/Library/shadercompiler-UnityShaderCompiler3.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-08fca548f089a4860b4e5fa175092b22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-10af0f66a59344306a0e628857cc6cd8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-186108b4b1def47aeb00d7ec48a3ac8c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-198f02ea18bef45e5ac7b80409e7df89" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-20367c1367b804c9dbf6d12d6c9951d1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-22075476019b94a3eb6c95b2714bfafc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-2f9b5b760a9a44575845c0ded6db881f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-32705e36ee48f4546a8ef73b0d563ceb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-3b95d2d8f6dfa402ba85ab73e64c2129" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-3bfb89565a5e54fbf9c8a123795380e4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-3ed3d339517b348e0b79a905ca46e2b7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-453dccf84de4846c2ba2206434ab71db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-486d00887d60f44359082c7ae005b9d8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-4a3d7ffb838a14e93b2df22350bc3d6f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-5a57643ff97a848d0b943cd16785103c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-65801216a0591443e8d719bd1536513c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-680213abdc97f44159f983946da28b33" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-7108cf9c13c9b4bf1a643b65a617c4b0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-79fb7d0f8fa8e417f8151ed162b57f6a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-8548e1f492fb548fb8266eba1e3abb18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-855587fb91e2c4953ba5166a456a3910" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-858aa25798a2641829e9bd2993f79d82" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-8f5cd2d7e38f84f04afb5651ad6d4f46" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-9b75d0cf7eb474c189266aad8c6d1564" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-a2d77eaa450e544d1ab0390d30dd6815" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-b526e74f32ac148059ac6e83dd8aabe5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-c1a178861c7b1419ca80c027284163ac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-d06fc8c34742d44eba3759767c1e260b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-d399d1fb19e1745a1ab5f52c3159a38f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-e5a4ca22794dc4745a8a88993d52d6a6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-f91d804bde089473786125cd3c30f387" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-fb60808de34724fa69cf47fec78b22e7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" beforeDir="false" afterPath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +93,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/weaponStat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/weaponController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GlitchShader.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TileGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemies/skeletController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Projectile/projectileController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -42,9 +111,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/dungeonGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/GlitchEffect.shader" />
         <option value="$PROJECT_DIR$/Assets/spriteGlitch.shader" />
-        <option value="$PROJECT_DIR$/Assets/GlitchShader.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Projectile/projectileController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/weaponController.cs" />
+        <option value="$PROJECT_DIR$/Assets/GlitchShader.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" />
       </list>
     </option>
   </component>
@@ -113,7 +183,7 @@
       <workItem from="1569173674543" duration="531000" />
       <workItem from="1569177479655" duration="6753000" />
       <workItem from="1569186573312" duration="2720000" />
-      <workItem from="1569281222083" duration="713000" />
+      <workItem from="1569281222083" duration="3355000" />
     </task>
     <servers />
   </component>
