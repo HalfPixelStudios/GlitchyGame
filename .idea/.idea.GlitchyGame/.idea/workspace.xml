@@ -2,19 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e462fa0d-bbef-44af-ad2a-33bd6c85b326" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Golem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GlitchyGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GlitchyGame/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GlitchyGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GlitchyGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProtocolInstance.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/golem/Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/golem/Attack.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/golem/Attack_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/golem/Attack_0.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/golem/IDLE.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/golem/IDLE.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/player_knight/player_knight_animcontrol.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/player_knight/player_knight_animcontrol.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/EditorInstance.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/4b6478-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/4b6478-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/eb7d53-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/eb7d53-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" beforeDir="false" afterPath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/2a/2ac3557d610f040ff88ff3801257c18a" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/2a/2ac3557d610f040ff88ff3801257c18a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/2a/2ac3557d610f040ff88ff3801257c18a.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/2a/2ac3557d610f040ff88ff3801257c18a.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/dc/dc644a7332602432fb4f37d9c5feed02" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/dc/dc644a7332602432fb4f37d9c5feed02" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/dc/dc644a7332602432fb4f37d9c5feed02.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/dc/dc644a7332602432fb4f37d9c5feed02.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-0514fe9d0c9fd4a6b90bf34877035570" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-138b0e62a74b84e6b8f1514fb004d601" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-26fac9f3330e846239c3edee9e5320f9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-2e2a78d33684b4895954e9a525d23f61" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-32c0d53742c674369a449e0583465b8a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-39eed250092874550ae980e32396f39a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-3ab43c2b3d2c74134bd0d646ad1b56c3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-43903a9a84c8e48fb8ff2fbd11954233" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-44e046f928bf347329461bde494bfe99" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-7496d0fc2e4b848d7b019e8eb399cc5b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-8088833d99def43e7b7eec7ab6952004" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-8453c01d6180e4015b79760bd6a6f0ac" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-a5004269ceeeb48bc8632c48b5f1478d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-a83d2647702b340bdb8d1e61eabbadee" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-d9c858113911643f9ba5070292465277" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-e4b0b1573d936491096239eff11f682c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-e53cc745920e84e788328a92f31bb333" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/UnityTempFile-f6da6cbbbcb664a2caacb9c96cd58da0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +151,7 @@
       <workItem from="1569173674543" duration="531000" />
       <workItem from="1569177479655" duration="6753000" />
       <workItem from="1569186573312" duration="2720000" />
-      <workItem from="1569281222083" duration="4486000" />
+      <workItem from="1569281222083" duration="4604000" />
     </task>
     <task id="LOCAL-00001" summary="tt">
       <created>1569287172071</created>
