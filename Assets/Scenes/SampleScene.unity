@@ -526,8 +526,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27178f5dd70ff304a9611c6b275cbf8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseHealth: 100
-  currentHealth: 0
 --- !u!114 &577345106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1115,8 +1113,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27178f5dd70ff304a9611c6b275cbf8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseHealth: 200
+--- !u!114 &1892442154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892442145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a4231759af4a45fe827959e9b1b3a1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseHealth: 100
   currentHealth: 0
+  move_speed: 3
 --- !u!1 &1982218937
 GameObject:
   m_ObjectHideFlags: 0
@@ -1218,7 +1229,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1982218941
 Rigidbody2D:
@@ -1594,8 +1605,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27178f5dd70ff304a9611c6b275cbf8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseHealth: 51
-  currentHealth: 0
 --- !u!114 &2141073084
 MonoBehaviour:
   m_ObjectHideFlags: 0
