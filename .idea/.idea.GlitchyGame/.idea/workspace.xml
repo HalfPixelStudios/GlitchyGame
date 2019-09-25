@@ -2,12 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e462fa0d-bbef-44af-ad2a-33bd6c85b326" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Random.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Random/RandomGravity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/TileMap.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GlitchyGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GlitchyGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GlitchyGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GlitchyGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TileMap.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GlitchValue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GlitchValue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/playerStat.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/playerStat.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Random/RandomGravity.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GlitchyGame.sln" beforeDir="false" afterPath="$PROJECT_DIR$/GlitchyGame.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProtocolInstance.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/f6ff33-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/f6ff33-mainStage.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/d2cc40-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/d2cc40-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/1f/1fe45c71573004f14a1baf14a35781e2" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/1f/1fe45c71573004f14a1baf14a35781e2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/28/288fa87db548d2c479520d72adbcdf4a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/28/288fa87db548d2c479520d72adbcdf4a.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/2b/2bf247af893bdd446811f2064c1b4352.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/2b/2bf247af893bdd446811f2064c1b4352.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/4d/4de5b741856f70f448d2d9068d6022f6.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/4d/4de5b741856f70f448d2d9068d6022f6.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/6c/6caf0618d4c630645acf7ffce46f5471.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/6c/6caf0618d4c630645acf7ffce46f5471.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/72/7281473dbe51acf4c8b6d672e2a2c4db.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/72/7281473dbe51acf4c8b6d672e2a2c4db.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/87/874f5522d37b46c488aa6a667343e997.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/87/874f5522d37b46c488aa6a667343e997.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/fe/feb6b049dbf48274c91708434c05ce82.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/fe/feb6b049dbf48274c91708434c05ce82.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +44,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/meleeTrail.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Stats.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/dungeonGenerator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/playerStat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/playerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Room.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/weaponStat.cs" root0="FORCE_HIGHLIGHTING" />
@@ -34,8 +53,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TileGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GlitchValue.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Golem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/pickupDetector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Projectile/projectileController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/weaponSheath.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/weaponCharge.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/echoTrail.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -49,13 +71,13 @@
         <option value="$PROJECT_DIR$/Assets/spriteGlitch.shader" />
         <option value="$PROJECT_DIR$/Assets/GlitchShader.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GlitchValue.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/devil_scout.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/playerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Stats.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Projectile/projectileController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/weaponController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Golem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GlitchValue.cs" />
       </list>
     </option>
   </component>
@@ -76,7 +98,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="SolutionBuilderGeneralOptionsPageId" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -128,6 +150,7 @@
       <workItem from="1569425271702" duration="192000" />
       <workItem from="1569431381522" duration="882000" />
       <workItem from="1569440980160" duration="238000" />
+      <workItem from="1569442376753" duration="1207000" />
     </task>
     <task id="LOCAL-00001" summary="tt">
       <created>1569287172071</created>
