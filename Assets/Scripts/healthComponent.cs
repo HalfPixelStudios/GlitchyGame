@@ -27,7 +27,7 @@ public class healthComponent : MonoBehaviour {
         }
 
         if (currentHealth <= 0) {
-            Debug.Log("DEAD",gameObject);
+
             //drop weapon if any
             weaponController old_weapon = gameObject.GetComponent<weaponSheath>().equiped_weapon.GetComponent<weaponController>();
             if (old_weapon != null) {
