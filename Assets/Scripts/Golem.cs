@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Golem : MonoBehaviour
 {
-    // Start is called before the first frame update
     private Enemy e;
     void Start()
     {

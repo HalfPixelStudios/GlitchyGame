@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class healthComponent : MonoBehaviour {
+public class Stats : MonoBehaviour {
 
     [Range(0f, 200f)] public float baseHealth;
     public float currentHealth;
-
+    public float move_speed;
     private ParticleSystem hit_particle; //move this somewhere else later
 
     void Start() {
