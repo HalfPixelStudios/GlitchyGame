@@ -62,14 +62,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\echoTrail.cs" />
-    <Compile Include="Assets\pickupDetector.cs" />
     <Compile Include="Assets\Scripts\AI\Enemy.cs" />
     <Compile Include="Assets\Scripts\AI\skeletController.cs" />
     <Compile Include="Assets\Scripts\Cam\cameraController.cs" />
     <Compile Include="Assets\Scripts\dungeonGenerator.cs" />
+    <Compile Include="Assets\Scripts\echoTrail.cs" />
     <Compile Include="Assets\Scripts\Golem.cs" />
     <Compile Include="Assets\Scripts\healthComponent.cs" />
+    <Compile Include="Assets\Scripts\magnetForce.cs" />
+    <Compile Include="Assets\Scripts\pickupDetector.cs" />
     <Compile Include="Assets\Scripts\Player\inputHandler.cs" />
     <Compile Include="Assets\Scripts\Player\playerController.cs" />
     <Compile Include="Assets\Scripts\Player\playerStat.cs" />

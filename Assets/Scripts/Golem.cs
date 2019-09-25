@@ -15,6 +15,7 @@ public class Golem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if (e.attack)
         {
             
@@ -24,6 +25,7 @@ public class Golem : MonoBehaviour
             var pos = gameObject.transform.position;
             pos.Set(pos.x+1,pos.y,pos.z);
         }
+        */
         
         
     }
