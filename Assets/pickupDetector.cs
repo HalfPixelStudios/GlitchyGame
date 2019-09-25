@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class pickupDetector : MonoBehaviour {
 
-    public GameObject weapon;
-
+    [SerializeField] public GameObject weapon;
     [Range(0f, 5f)] public float pickup_radius;
     [Range(-1f, 1f)] public float offset_x;
     [Range(-1f, 1f)] public float offset_y;
@@ -18,8 +17,7 @@ public class pickupDetector : MonoBehaviour {
     void Update() { }
 
     private void OnTriggerEnter2D (Collider2D other) {
-        //show hovering arrow
-        //Debug.Log(Resources.Load("dropped_item_arrow") as GameObject);
+        //show hovering arrow once player becomes within range
         arrow = Instantiate(Resources.Load("UI/dropped_item_arrow") as GameObject, new Vector3(transform.position.x+offset_x,transform.position.y+offset_y,transform.position.z), transform.rotation);
     }
 
@@ -37,7 +35,7 @@ public class pickupDetector : MonoBehaviour {
     }
 
     private void OnTriggerExit2D(Collider2D other) {
-        //kill hovering arrow
+        //kill hovering arrow once player is no longer within range
         Destroy(arrow);
     }
 

@@ -6,8 +6,6 @@ using UnityEngine;
 public class weaponController : MonoBehaviour {
 
     [Range(0f,200f)] public float melee_damage; //damage dealt when weapon hits entity
-
-    public string weapon_type; //unused for now
     public GameObject projectile;
 
     public GameObject owner;
@@ -47,8 +45,6 @@ public class weaponController : MonoBehaviour {
             float new_y = (float)(owner.transform.position.y + 1 * Math.Sin(weapon_angle) + follow_offset_y);
             transform.position = new Vector3(new_x, new_y, owner.transform.position.z);
 
-            //transform.RotateAround(owner_pos, transform.forward, 2f);
-            //Debug.Log(mouse_angle);
 
         } else { //if weapon does not have an owner, display it as a dropped item
             transform.Rotate(0, 4f, 0); //cheesy rotating effect
@@ -71,12 +67,13 @@ public class weaponController : MonoBehaviour {
         body.isKinematic = true;
         body.freezeRotation = false;
 
-        Destroy(pickup);
+        Destroy(pickup); //remove pickup radius thingy
     }
 
     public void set_drop_mode() { //if the weapon is no longer being used
         owner = null;
 
+        //dropped items are rendered differently and arent subject to physics
         gameObject.layer = LayerMask.NameToLayer("Dropped Items");
         body.isKinematic = false; //just make sure there is no force when the item is dropped
         body.freezeRotation = true;

@@ -7,7 +7,7 @@ public class healthComponent : MonoBehaviour {
     [Range(0f, 200f)] public float baseHealth;
     public float currentHealth;
 
-    ParticleSystem hit_particle; //move this somewhere else later
+    private ParticleSystem hit_particle; //move this somewhere else later
 
     void Start() {
         currentHealth = baseHealth;

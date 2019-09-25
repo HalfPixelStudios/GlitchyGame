@@ -98,6 +98,7 @@ MonoBehaviour:
   damage: 20
   speed: 20
   range: 10
+  penetration: 2
   body: {fileID: 0}
   angle: 0
 --- !u!50 &2915229804440057855
