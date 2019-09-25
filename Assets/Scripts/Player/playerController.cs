@@ -6,14 +6,16 @@ public class playerController : MonoBehaviour {
     private static float INPUT_THRESHHOLD = 0.5f; //this is only really important if we add controller support
 
     [Range(0f, 10f)] //Move this to player stat componenet later
-    public float move_speed;
 
     private Animator anim;
     private Rigidbody2D body;
     private weaponSheath weapon_sheath;
+    private Stats stats;
     [SerializeField] private bool isMoving;
 
-    void Start() {
+    void Start()
+    {
+        stats = GetComponent<Stats>();
         anim = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
         weapon_sheath = GetComponent<weaponSheath>();
@@ -34,7 +36,7 @@ public class playerController : MonoBehaviour {
 
         //Check to see if there is actually input
         if (Math.Abs(input_x) > INPUT_THRESHHOLD || Math.Abs(input_y) > INPUT_THRESHHOLD) {
-            body.velocity = new Vector2(input_x , input_y ).normalized*move_speed;
+            body.velocity = new Vector2(input_x , input_y ).normalized*stats.move_speed;
             isMoving = true;
         }
 

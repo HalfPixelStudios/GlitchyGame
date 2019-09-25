@@ -37,9 +37,9 @@ public class projectileController : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D other) { //if the projectile hits something
 
         Destroy(this.gameObject);
-        healthComponent hp_comp = other.gameObject.GetComponent<healthComponent>();
-        if (hp_comp != null) { 
-            hp_comp.modHp(-1 * damage);
+        Stats hp = other.gameObject.GetComponent<Stats>();
+        if (hp != null) { 
+            hp.modHp(-1 * damage);
         }
     }
 }

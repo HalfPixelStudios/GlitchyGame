@@ -8,16 +8,17 @@
         <e p="GlitchShader.shader" t="Include" />
         <e p="pickupDetector.cs" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="AI" t="Include">
+            <e p="devil_scout.cs" t="Include" />
+            <e p="Enemy.cs" t="Include" />
+            <e p="skeletController.cs" t="Include" />
+          </e>
           <e p="Cam" t="Include">
             <e p="cameraController.cs" t="Include" />
           </e>
           <e p="DungeonGenerator.cs" t="Include" />
-          <e p="Enemies" t="Include">
-            <e p="Enemy.cs" t="Include" />
-            <e p="skeletController.cs" t="Include" />
-          </e>
+          <e p="GlitchValue.cs" t="Include" />
           <e p="Golem.cs" t="Include" />
-          <e p="healthComponent.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="inputHandler.cs" t="Include" />
             <e p="playerController.cs" t="Include" />
@@ -27,14 +28,15 @@
             <e p="projectileController.cs" t="Include" />
           </e>
           <e p="Room.cs" t="Include" />
+          <e p="Stats.cs" t="Include" />
           <e p="TileGenerator.cs" t="Include" />
           <e p="Weapons" t="Include">
             <e p="meleeTrail.cs" t="Include" />
             <e p="weaponCharge.cs" t="Include" />
             <e p="weaponController.cs" t="Include" />
+            <e p="weaponSheath.cs" t="Include" />
             <e p="weaponStat.cs" t="Include" />
           </e>
-          <e p="weaponSheath.cs" t="Include" />
         </e>
       </e>
       <e p="GlitchyGame.sln" t="IncludeFlat" />
