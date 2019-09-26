@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1767e385d6a1d1489fd13439bb4a04d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapon_type: 
+  melee_damage: 0
   projectile: {fileID: 0}
   owner: {fileID: 0}
   orbit_radius: 0
@@ -60,7 +60,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3673153004205917511}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0

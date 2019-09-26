@@ -17,7 +17,7 @@ public class magnetForce : MonoBehaviour {
     }
 
     private void OnTriggerStay2D(Collider2D other) { //while coin object is within range, make it gravitate towards player
-        if (Equals(other.gameObject.name,"gold_coin")) {
+        if (other.gameObject.GetComponent<Coin>() != null) {
             Rigidbody2D body = other.gameObject.GetComponent<Rigidbody2D>();
             Vector3 other_pos = other.gameObject.transform.position;
             Vector3 this_pos = gameObject.transform.position;

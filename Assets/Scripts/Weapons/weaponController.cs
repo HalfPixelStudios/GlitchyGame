@@ -64,7 +64,7 @@ public class weaponController : MonoBehaviour {
         new_owner.GetComponent<weaponSheath>().equiped_weapon = this.gameObject;
         
         gameObject.layer = LayerMask.NameToLayer("Weapons");
-        body.isKinematic = true;
+        //body.isKinematic = true;
         body.freezeRotation = false;
 
         Destroy(pickup); //remove pickup radius thingy
@@ -75,7 +75,7 @@ public class weaponController : MonoBehaviour {
 
         //dropped items are rendered differently and arent subject to physics
         gameObject.layer = LayerMask.NameToLayer("Dropped Items");
-        body.isKinematic = false; //just make sure there is no force when the item is dropped
+        //body.isKinematic = false; //just make sure there is no force when the item is dropped
         body.freezeRotation = true;
         transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, 0f);
 

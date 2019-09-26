@@ -33,8 +33,11 @@ public class Stats : MonoBehaviour {
             if (old_weapon != null) {
                 old_weapon.set_drop_mode();
             }
-            
+
+            //drop some coins
+            Instantiate(Resources.Load("gold_coin"), transform.position, transform.rotation);
             Destroy(this.gameObject); //THIS IS VERY BAD, especially for players, fix later
+
         } else if (currentHealth > baseHealth) { currentHealth = baseHealth; } //cant go over max hp
     }
 
