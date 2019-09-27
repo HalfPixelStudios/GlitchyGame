@@ -2,17 +2,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
-public class Stats : MonoBehaviour {
 
-    public static System.Random rand = new System.Random();
+public class Stats : MonoBehaviour
+{
+    private GlitchValue _glitchValue;
 
     [Range(0f, 200f)] public float baseHealth;
     public float currentHealth;
     public float move_speed;
     private ParticleSystem hit_particle; //move this somewhere else later
 
-    void Start() {
+    void Start()
+    {
+        _glitchValue = gameObject.GetComponent<GlitchValue>();
         currentHealth = baseHealth;
         hit_particle = (Instantiate(Resources.Load("Particles/hit_particles"),transform.position,transform.rotation) as GameObject).GetComponent<ParticleSystem>();
         hit_particle.Stop();
@@ -23,6 +27,10 @@ public class Stats : MonoBehaviour {
     }
 
     public void modHp(float deltaHp) {
+        if (_glitchValue != null)
+        {
+            _glitchValue.modGlitch(deltaHp);
+        }
         currentHealth += deltaHp;
 
         if (deltaHp < 0) { //if the entity is losing health, play damage particles
@@ -40,7 +48,7 @@ public class Stats : MonoBehaviour {
                 
             }
 
-            for (int i = 0; i < Stats.rand.Next(2, 6); i++) {//drop some coins
+            for (int i = 0; i < Random.Range(2, 6); i++) {//drop some coins
                 //ALSO RANDOMIZE POSITION
                 Instantiate(Resources.Load("gold_coin"), transform.position, transform.rotation);
             }
