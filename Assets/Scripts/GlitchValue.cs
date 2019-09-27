@@ -16,19 +16,19 @@ public class GlitchValue : MonoBehaviour
     {
         delta = 0;
         effects=new List<Effect>();
-        effects.Add(new Gravity());
+        //effects.Add(new RotateEffect());
+        //effects.Add(new GravityEffect());
+        effects.Add(new TeleportationEffect());
 
     }
     void Update()
     {
         delta += Time.deltaTime;
-        if (delta > 1.5f)
+        if (delta > 2f)
         {
             if (Random.Range(1,100) <= glitchValue)
             {
-                Debug.Log("added");
-                effects[Random.Range(0,effects.Count)].apply(gameObject);
-                glitchValue = 0;
+                effects[Random.Range(0,effects.Count)].Apply(gameObject);
             }
             delta = 0;
         }

@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class RandomGravity : MonoBehaviour
+public class RandomGravity :MonoBehaviour
 {
-    private float delta;
+    public float delta;
+    
     // Start is called before the first frame update
     void Start()
     {
         delta = 0;
-        gameObject.GetComponent<Rigidbody2D>().gravityScale = Random.Range(1,5);
+        gameObject.GetComponent<Rigidbody2D>().gravityScale = Random.Range(3,7);
 
     }
 
@@ -26,4 +27,7 @@ public class RandomGravity : MonoBehaviour
         }
 
     }
+    
+
+    
 }
