@@ -66,6 +66,7 @@
      <Compile Include="Assets\Scripts\GlitchValue.cs" />
      <Compile Include="Assets\Scripts\Golem.cs" />
      <Compile Include="Assets\Scripts\magnetForce.cs" />
+     <Compile Include="Assets\Scripts\Map\mapGenerator.cs" />
      <Compile Include="Assets\Scripts\pickupDetector.cs" />
      <Compile Include="Assets\Scripts\Player\inputHandler.cs" />
      <Compile Include="Assets\Scripts\Player\playerController.cs" />
