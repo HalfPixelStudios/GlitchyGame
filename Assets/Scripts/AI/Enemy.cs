@@ -36,7 +36,7 @@ public class Enemy : MonoBehaviour
         if (dist < attack_range)
         {
             attack = true;
-            gameObject.GetComponent<Animator>().SetBool("attack",true);
+            
             
 
 
@@ -44,7 +44,6 @@ public class Enemy : MonoBehaviour
         else
         {
             attack = false;
-            gameObject.GetComponent<Animator>().SetBool("attack",false);
         }
 
 
