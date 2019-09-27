@@ -18,9 +18,16 @@
           <e p="Coin.cs" t="Include" />
           <e p="DungeonGenerator.cs" t="Include" />
           <e p="echoTrail.cs" t="Include" />
+          <e p="Effects" t="Include">
+            <e p="Effect.cs" t="Include" />
+            <e p="Gravity.cs" t="Include" />
+          </e>
           <e p="GlitchValue.cs" t="Include" />
           <e p="Golem.cs" t="Include" />
           <e p="magnetForce.cs" t="Include" />
+          <e p="Map" t="Include">
+            <e p="mapGenerator.cs" t="Include" />
+          </e>
           <e p="pickupDetector.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="inputHandler.cs" t="Include" />

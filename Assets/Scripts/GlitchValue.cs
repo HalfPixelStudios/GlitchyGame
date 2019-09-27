@@ -7,26 +7,38 @@ using Random = UnityEngine.Random;
 public class GlitchValue : MonoBehaviour
 {
     public float glitchValue = 0;
-    public List<Type> effects;
+    public List<Effect> effects;
+
+    private float delta;
     //glitches
     //random gravity
     void Start()
     {
-        effects.Add(typeof(RandomGravity));
-        
+        delta = 0;
+        effects=new List<Effect>();
+        effects.Add(new Gravity());
+
     }
     void Update()
     {
-        if (Random.Range(1, 10000) <= glitchValue)
+        delta += Time.deltaTime;
+        if (delta > 1.5f)
         {
-            gameObject.AddComponent(effects[Random.Range(0, effects.Count - 1)]);
+            if (Random.Range(1,100) <= glitchValue)
+            {
+                Debug.Log("added");
+                effects[Random.Range(0,effects.Count)].apply(gameObject);
+                glitchValue = 0;
+            }
+            delta = 0;
         }
-        
+
     }
 
-    public void Damage()
+    public void modGlitch(float delta)
     {
-        glitchValue += 1;
+        
+        glitchValue -= delta;
 
     }
 }

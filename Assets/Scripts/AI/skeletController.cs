@@ -2,10 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
+
 
 public class skeletController : MonoBehaviour {
-
-    public static System.Random rand = new System.Random();
 
     [Range(0f, 10f)] public float speed;
 
@@ -29,12 +29,12 @@ public class skeletController : MonoBehaviour {
 
         //update counters
         if (idleCounter <= 0 && !isMoving) { // if no longer idle, decide new direction to walk in
-            moveDirect = (float)(skeletController.rand.Next(0, 360) * (Math.PI / 180));
-            moveCounter = rand.Next(2, 4); //decide random wander time
+            moveDirect = (float)(Random.Range(0, 360) * (Math.PI / 180));
+            moveCounter = Random.Range(2,4); //decide random wander time
             isMoving = true;
         }
         if (moveCounter <= 0 && isMoving) {
-            idleCounter = rand.Next(1, 5); //HARDCODED FOR NOW
+            idleCounter = Random.Range(1, 5); //HARDCODED FOR NOW
             isMoving = false;
         }
 

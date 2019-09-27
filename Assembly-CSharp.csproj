@@ -63,6 +63,8 @@
      <Compile Include="Assets\Scripts\Coin.cs" />
      <Compile Include="Assets\Scripts\dungeonGenerator.cs" />
      <Compile Include="Assets\Scripts\echoTrail.cs" />
+     <Compile Include="Assets\Scripts\Effects\Effect.cs" />
+     <Compile Include="Assets\Scripts\Effects\Gravity.cs" />
      <Compile Include="Assets\Scripts\GlitchValue.cs" />
      <Compile Include="Assets\Scripts\Golem.cs" />
      <Compile Include="Assets\Scripts\magnetForce.cs" />
