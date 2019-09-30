@@ -19,7 +19,7 @@ public class Spikes : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log(activated);
         if (activated)
@@ -28,8 +28,9 @@ public class Spikes : MonoBehaviour
             Stats s=other.gameObject.GetComponent<Stats>();
             s.modHp(-10);
         }
-        
     }
+
+    
 
     
 }

@@ -18,10 +18,6 @@
           <e p="Coin.cs" t="Include" />
           <e p="DungeonGenerator.cs" t="Include" />
           <e p="echoTrail.cs" t="Include" />
-          <e p="Effects" t="Include">
-            <e p="Effect.cs" t="Include" />
-            <e p="Gravity.cs" t="Include" />
-          </e>
           <e p="GlitchValue.cs" t="Include" />
           <e p="Golem.cs" t="Include" />
           <e p="magnetForce.cs" t="Include" />
@@ -37,7 +33,12 @@
             <e p="projectileController.cs" t="Include" />
           </e>
           <e p="Random" t="Include">
+            <e p="Effect.cs" t="Include" />
+            <e p="GravityEffect.cs" t="Include" />
             <e p="RandomGravity.cs" t="Include" />
+            <e p="RandomRotate.cs" t="Include" />
+            <e p="RotateEffect.cs" t="Include" />
+            <e p="TeleportationEffect.cs" t="Include" />
           </e>
           <e p="Room.cs" t="Include" />
           <e p="Spikes.cs" t="Include" />
