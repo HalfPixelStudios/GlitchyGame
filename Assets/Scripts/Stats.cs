@@ -20,6 +20,7 @@ public class Stats : MonoBehaviour
         currentHealth = baseHealth;
         hit_particle = (Instantiate(Resources.Load("Particles/hit_particles"),transform.position,transform.rotation) as GameObject).GetComponent<ParticleSystem>();
         hit_particle.Stop();
+        hit_particle.transform.parent = gameObject.transform;
     }
 
     void Update() {
@@ -52,6 +53,7 @@ public class Stats : MonoBehaviour
                 //ALSO RANDOMIZE POSITION
                 Instantiate(Resources.Load("gold_coin"), transform.position, transform.rotation);
             }
+
             Destroy(this.gameObject); //THIS IS VERY BAD, especially for players, fix later
 
         } else if (currentHealth > baseHealth) { currentHealth = baseHealth; } //cant go over max hp
