@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\GlitchValue.cs" />
     <Compile Include="Assets\Scripts\Golem.cs" />
     <Compile Include="Assets\Scripts\magnetForce.cs" />
+    <Compile Include="Assets\Scripts\Map\RoomEntrance.cs" />
     <Compile Include="Assets\Scripts\Map\RoomExit.cs" />
     <Compile Include="Assets\Scripts\pickupDetector.cs" />
     <Compile Include="Assets\Scripts\Player\inputHandler.cs" />

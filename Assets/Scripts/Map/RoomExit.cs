@@ -3,11 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using SuperTiled2Unity;
 
 //[ExecuteInEditMode]
 public class RoomExit : MonoBehaviour {
 
     private GameObject room; //the room that the room exit will generate
+    [SerializeField] private List<GameObject> entrances = new List<GameObject>();
+    [SerializeField] private List<GameObject> exits = new List<GameObject>();
 
     void Start() {
 
@@ -32,26 +35,47 @@ public class RoomExit : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D other) { //teleport player to a new room 
+        //Create the new room
         createNewRoom();
         createRoomWarpZones();
 
-        Destroy(gameObject);
+        //Teleport player to a random room entrance
+        GameObject selected_entrance = exits[Random.Range(0, entrances.Count)];
+        print(other.gameObject.name);
+        other.gameObject.transform.position = selected_entrance.transform.position;
+
+        
+        //Then delete all the entrances
+        foreach (GameObject ent in entrances) { Destroy(ent); }
+        entrances.Clear();
+
+        //Destroy current map
+        Destroy(gameObject); //destroy roomExit object
     }
 
     private void createRoomWarpZones() { //creates roomExit and roomEntrance objects 
-        GameObject room_zones = room.transform.Find("Grid").gameObject.transform.Find("ROOM_ZONES").gameObject;
-
-        /*
+        GameObject room_zones = room.transform.Find("Grid").gameObject.transform.Find("ROOM_ZONES").gameObject; //Get list of all collision objects in map
+        
         foreach (Transform child in room_zones.transform) { //get all zone objects
-            string zone_type = child.GetComponent<SuperTiled2Unity.SuperCustomProperties>().GetType().GetField("zone_type");
+            CustomProperty property;
+            child.GetComponent<SuperCustomProperties>().TryGetCustomProperty("zone_type", out property); //get custom property obejct
+            GameObject child_ob = child.gameObject;
 
-            print(zone_type);
-            if (Equals(zone_type,"entrance")) {
-                Debug.Log("entrance");
-            } else if (Equals(zone_type,"exit")) {
-                Debug.Log("exit");
+            if (Equals(property.m_Value,"entrance")) {
+                child_ob.GetComponent<BoxCollider2D>().isTrigger = true;
+
+                entrances.Add(child_ob);
+
+            } else if (Equals(property.m_Value, "exit")) {
+                child_ob.AddComponent<RoomExit>();
+                child_ob.GetComponent<BoxCollider2D>().isTrigger = true;
+
+
+                exits.Add(child_ob);
+
             }
+            
         }
-        */
+        
     }
 }

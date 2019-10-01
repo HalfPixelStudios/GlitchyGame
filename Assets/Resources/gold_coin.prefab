@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8415316123900389144}
   - component: {fileID: 66575486836495869}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ GameObject:
   - component: {fileID: 4640604569118224293}
   - component: {fileID: 4640604569118224294}
   - component: {fileID: 4640604569118224295}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: gold_coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}

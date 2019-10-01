@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5083367510601687484}
   - component: {fileID: 5083367510601687487}
   - component: {fileID: -776655066646116652}
-  m_Layer: 8
+  m_Layer: 12
   m_Name: roomExit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,3 +70,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8a263203fbdbf343ae2b783e22cf3d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  entrances: []
+  exits: []
