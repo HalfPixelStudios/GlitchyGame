@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="256" height="256" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="47">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="256" height="256" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="76">
  <tileset firstgid="1" source="tilesets/dungeon_set_1.tsx"/>
  <tileset firstgid="257" source="tilesets/dungeon_set_3.tsx"/>
  <tileset firstgid="513" source="tilesets/collider.tsx"/>
@@ -1068,5 +1068,30 @@
   <object id="44" x="1184" y="96" width="112" height="16"/>
   <object id="45" x="1328" y="96" width="112" height="16"/>
   <object id="46" x="1440" y="96" width="16" height="128"/>
+  <object id="47" x="688" y="160" width="16" height="16"/>
+  <object id="48" x="736" y="160" width="16" height="16"/>
+  <object id="49" x="816" y="160" width="16" height="16"/>
+  <object id="50" x="688" y="208" width="16" height="16"/>
+  <object id="51" x="736" y="208" width="16" height="16"/>
+  <object id="53" x="816" y="208" width="16" height="16"/>
+  <object id="54" x="864" y="160" width="16" height="16"/>
+  <object id="55" x="864" y="208" width="16" height="16"/>
+  <object id="56" x="864" y="304" width="16" height="16"/>
+  <object id="57" x="816" y="304" width="16" height="16"/>
+  <object id="58" x="816" y="352" width="16" height="16"/>
+  <object id="59" x="864" y="352" width="16" height="16"/>
+  <object id="60" x="736" y="304" width="16" height="16"/>
+  <object id="61" x="688" y="304" width="16" height="16"/>
+  <object id="62" x="688" y="352" width="16" height="16"/>
+  <object id="63" x="736" y="352" width="16" height="16"/>
+  <object id="66" x="1280" y="224" width="16" height="16"/>
+  <object id="67" x="1328" y="224" width="16" height="16"/>
+  <object id="68" x="1328" y="272" width="16" height="16"/>
+  <object id="69" x="1280" y="272" width="16" height="16"/>
+  <object id="70" x="1200" y="160" width="16" height="32"/>
+  <object id="71" x="1216" y="176" width="16" height="32"/>
+  <object id="72" x="1232" y="160" width="16" height="48"/>
+  <object id="73" x="1248" y="192" width="16" height="32"/>
+  <object id="74" x="1264" y="176" width="16" height="16"/>
  </objectgroup>
 </map>

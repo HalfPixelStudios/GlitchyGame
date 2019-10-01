@@ -1,0 +1,29 @@
+fileFormatVersion: 2
+guid: 109677330f0b30b439459f013ab1cd9c
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
+  missingFiles:
+  - Assets/TileMap/old/tilesets/dungeon_set_1.tsx
+  errors:
+  - Unknown error encountered. Please report as bug. Stack track is in the console
+    output.
+  - Object reference not set to an instance of an object
+  warnings: []
+  missingSortingLayers: []
+  missingLayers: []
+  missingTags: []
+  importerVersion: 16
+  pixelsPerUnit: 100
+  edgesPerEllipse: 32
+  numberOfObjectsImported: 0
+  tilesAsObjects: 0
+  sortingMode: 0
+  isIsometric: 0
+  customImporterClassName: 
+  internalTilesets: []
