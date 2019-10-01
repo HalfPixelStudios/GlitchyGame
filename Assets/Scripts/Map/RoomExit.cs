@@ -38,14 +38,15 @@ public class RoomExit : MonoBehaviour {
 
         if (!room_info.isCleared) { return; } //dont do anything if the room hasnt been cleared yet
 
+        //Destroy current map
+        Destroy(cur_room); //destroy roomExit object
+
         //Create the new room
         GameObject new_room = createNewRoom();
 
         //Teleport player to a random room entrance
         other.gameObject.transform.position = new_room.GetComponent<RoomInfo>().getRandomEntrance();
 
-        //Destroy current map
-        Destroy(cur_room); //destroy roomExit object
     }
 
 }

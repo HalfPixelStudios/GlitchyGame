@@ -5,11 +5,11 @@ using SuperTiled2Unity;
 
 public class RoomInfo : MonoBehaviour {
 
-    public bool isCleared = false;
-    [SerializeField] private List<GameObject> entrances = new List<GameObject>();
-    [SerializeField] private List<GameObject> exits = new List<GameObject>();
+    public bool isCleared = true;
+    [SerializeField] public List<GameObject> entrances = new List<GameObject>();
+    [SerializeField] public List<GameObject> exits = new List<GameObject>();
 
-    void Start() {
+    void Awake() {
         createRoomWarpZones();
     }
 
@@ -29,7 +29,7 @@ public class RoomInfo : MonoBehaviour {
                 child_ob.GetComponent<BoxCollider2D>().isTrigger = true;
 
                 entrances.Add(child_ob);
-                Debug.Log(entrances.Count, gameObject);
+                //Debug.Log(entrances.Count, gameObject);
 
             } else if (Equals(property.m_Value, "exit")) {
                 RoomExit room_exit = child_ob.AddComponent<RoomExit>();
@@ -46,7 +46,6 @@ public class RoomInfo : MonoBehaviour {
     }
 
     public Vector3 getRandomEntrance() {
-        Debug.Log(entrances.Count, gameObject);
         GameObject selected_entrance = entrances[Random.Range(0, entrances.Count)];
         return selected_entrance.transform.position;
     }
