@@ -28,7 +28,7 @@ public class RoomExit : MonoBehaviour {
         //pick a random dungeon frame
         string room_path = info[Random.Range(0, info.Length)].Name.Replace(".prefab","");
         //DONT INIT AS transform.position, transformu.rotation!!!!!!
-        GameObject room = Instantiate(Resources.Load("Rooms/"+room_path) as GameObject, transform.position, transform.rotation);
+        GameObject room = Instantiate(Resources.Load("Rooms/"+room_path) as GameObject, new Vector3(-16,16,0), transform.rotation);
         room.AddComponent<RoomInfo>();
         return room;
     }
@@ -45,7 +45,9 @@ public class RoomExit : MonoBehaviour {
         GameObject new_room = createNewRoom();
 
         //Teleport player to a random room entrance
+        other.gameObject.isStatic = true;
         other.gameObject.transform.position = new_room.GetComponent<RoomInfo>().getRandomEntrance();
+        other.gameObject.isStatic = false;
 
     }
 
