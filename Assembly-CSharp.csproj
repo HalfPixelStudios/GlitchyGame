@@ -89,6 +89,7 @@
     <Compile Include="Assets\Scripts\Spikes.cs" />
     <Compile Include="Assets\Scripts\Stats.cs" />
     <Compile Include="Assets\Scripts\TileGenerator.cs" />
+    <Compile Include="Assets\Scripts\TreasureChest.cs" />
     <Compile Include="Assets\Scripts\Weapons\meleeTrail.cs" />
     <Compile Include="Assets\Scripts\Weapons\weaponCharge.cs" />
     <Compile Include="Assets\Scripts\Weapons\weaponController.cs" />
