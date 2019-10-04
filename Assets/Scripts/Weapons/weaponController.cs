@@ -21,7 +21,7 @@ public class weaponController : MonoBehaviour {
     private GameObject pickup;
     private Rigidbody2D body;
 
-    void Start() {
+    void Awake() {
         body = GetComponent<Rigidbody2D>();
         //owner
         //this is giving error for some reason
