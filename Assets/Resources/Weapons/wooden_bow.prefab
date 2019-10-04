@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5749487858831140613}
   - component: {fileID: 8864477398610545636}
   - component: {fileID: 8379032138846241928}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: wooden_bow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,6 +103,7 @@ MonoBehaviour:
   follow_offset_x: 0
   follow_offset_y: -0.5
   angle_offset: 0
+  mass: 0
 --- !u!50 &8864477398610545636
 Rigidbody2D:
   serializedVersion: 4
