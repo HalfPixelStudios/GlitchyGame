@@ -15,6 +15,7 @@ public class weaponController : MonoBehaviour {
     [Range(-1f,1f)] public float follow_offset_x;
     [Range(-1f, 1f)] public float follow_offset_y;
     [Range(0f, 360f)] public float angle_offset; //in degrees
+    [Range(0f, 300f)] public float mass;
 
     private GameObject pickup;
     private Rigidbody2D body;
@@ -25,9 +26,11 @@ public class weaponController : MonoBehaviour {
         //this is giving error for some reason
         //Physics.IgnoreCollision(owner.GetComponent<Collider>(), gameObject.GetComponent<Collider>());
         orbit_radius = 0.8f;
-
+        
         if (owner != null) { set_pickup_mode(owner);
         } else { set_drop_mode(); }
+        
+        
     }
 
     void Update() {
@@ -36,7 +39,8 @@ public class weaponController : MonoBehaviour {
 
             float weapon_angle = owner.GetComponent<weaponSheath>().weapon_angle; //change this to be more generic so it works with enemies too
 
-            //roatate  weapon depending on where mouse is
+            //rotate  weapon depending on where mouse is
+            //float zrot = (float) Mathf.Lerp(transform.rotation.z,(float)(weapon_angle * 180 / Math.PI + angle_offset),mass);
             transform.rotation = Quaternion.Euler((float)(transform.rotation.x * 180 / Math.PI), (float)(transform.rotation.y * 180 / Math.PI), (float)(weapon_angle * 180 / Math.PI + angle_offset));
 
             //weapon 'orbits' owner
@@ -49,6 +53,8 @@ public class weaponController : MonoBehaviour {
         } else { //if weapon does not have an owner, display it as a dropped item
             transform.Rotate(0, 4f, 0); //cheesy rotating effect
         }
+        
+        
 
     }
 
