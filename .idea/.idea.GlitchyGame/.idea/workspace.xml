@@ -2,28 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e462fa0d-bbef-44af-ad2a-33bd6c85b326" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Random/MirrorEffect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Random/MirrorEffect.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Random/RandomMirror.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Random/RandomMirror.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GlitchyGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GlitchyGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GlitchyGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GlitchyGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/devil_scout.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/devil_scout.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AI/skeletController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AI/skeletController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GlitchValue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GlitchValue.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Weapons/weaponController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Weapons/weaponController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GlitchyGame.sln" beforeDir="false" afterPath="$PROJECT_DIR$/GlitchyGame.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ProtocolInstance.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ProtocolInstance.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/BuiltinAssemblies.stamp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/Hierarchy/f6ff33-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/Hierarchy/f6ff33-mainStage.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/b8dd26-mainStage.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/b8dd26-mainStage.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/assetDatabase3" beforeDir="false" afterPath="$PROJECT_DIR$/Library/assetDatabase3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/1f/1fe45c71573004f14a1baf14a35781e2" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/1f/1fe45c71573004f14a1baf14a35781e2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/34/34505e3688de84240a2a70fc52076185" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/34/34505e3688de84240a2a70fc52076185" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/91/917b3e6294902c046bceafb935b15e99" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/91/917b3e6294902c046bceafb935b15e99" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/a3/a3a94208c18f861428745b445628b02a" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/a3/a3a94208c18f861428745b445628b02a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/60/60806ec02db2a2743bb7a52f3db4ef98" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/60/60806ec02db2a2743bb7a52f3db4ef98" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/60/60806ec02db2a2743bb7a52f3db4ef98.info" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/60/60806ec02db2a2743bb7a52f3db4ef98.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/b8/b8e363bf4b71fc2489fa7097430ffe4e" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/b8/b8e363bf4b71fc2489fa7097430ffe4e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/bb/bb50eb0a4bcafe54f86e94abd632502a" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/bb/bb50eb0a4bcafe54f86e94abd632502a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/metadata/d2/d2763ce17612d4b4ab7d4a2a96fb1d88" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/d2/d2763ce17612d4b4ab7d4a2a96fb1d88" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/metadata/e1/e1767e385d6a1d1489fd13439bb4a04d" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e1/e1767e385d6a1d1489fd13439bb4a04d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/metadata/e6/e655ee7b28bfae64cbc1822c80098bfc" beforeDir="false" afterPath="$PROJECT_DIR$/Library/metadata/e6/e655ee7b28bfae64cbc1822c80098bfc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" beforeDir="false" afterPath="$PROJECT_DIR$/Temp/__Backupscenes/0.backup" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csprojAssemblyReference.cache" afterDir="false" />
     </list>
@@ -56,8 +62,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Random/Effect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SuperTiled2Unity/Scripts/SuperCustomProperties.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Random/RandomRotate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Random/MirrorEffect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AI/devil_scout.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Random/TeleportationEffect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Random/RandomMirror.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Golem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Projectile/projectileController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons/weaponSheath.cs" root0="FORCE_HIGHLIGHTING" />
@@ -92,12 +100,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Random/RandomRotate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Random/GravityEffect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Random/RotateEffect.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GlitchValue.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Random/TeleportationEffect.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/Enemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/weaponController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AI/devil_scout.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AI/skeletController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AI/devil_scout.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Weapons/weaponController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GlitchValue.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Random/MirrorEffect.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Random/RandomMirror.cs" />
       </list>
     </option>
   </component>
@@ -175,7 +185,7 @@
       <workItem from="1569548546015" duration="3643000" />
       <workItem from="1569596527992" duration="5622000" />
       <workItem from="1570146086181" duration="1621000" />
-      <workItem from="1570151998203" duration="1145000" />
+      <workItem from="1570151998203" duration="3044000" />
     </task>
     <task id="LOCAL-00001" summary="tt">
       <created>1569287172071</created>

@@ -40,7 +40,9 @@
           <e p="Random" t="Include">
             <e p="Effect.cs" t="Include" />
             <e p="GravityEffect.cs" t="Include" />
+            <e p="MirrorEffect.cs" t="Include" />
             <e p="RandomGravity.cs" t="Include" />
+            <e p="RandomMirror.cs" t="Include" />
             <e p="RandomRotate.cs" t="Include" />
             <e p="RotateEffect.cs" t="Include" />
             <e p="TeleportationEffect.cs" t="Include" />

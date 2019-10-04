@@ -9,6 +9,8 @@ public class devil_scout : MonoBehaviour
     void Start()
     {
         enemyComp = gameObject.GetComponent<Enemy>();
+        
+        
         statComp = GetComponent<Stats>();
 
 
@@ -21,11 +23,34 @@ public class devil_scout : MonoBehaviour
             float dy = enemyComp.player.transform.position.y - gameObject.transform.position.y;
             if (Mathf.Abs(dx) > Mathf.Abs(dy))
             {
-                gameObject.GetComponent<Rigidbody2D>().velocity=new Vector2(Mathf.Sign(dx)*statComp.move_speed,0);
+                int dir;
+                if (Mathf.Sign(dx) == 1)
+                {
+                    dir = Random.Range(-3, 15);
+                    
+                    
+                }
+                else
+                {
+                    dir = Random.Range(-14, 4);
+                }
+                gameObject.GetComponent<Rigidbody2D>().velocity=new Vector2(Mathf.Sign(dir)*statComp.move_speed,0);
+                
             }
             else
             {
-                gameObject.GetComponent<Rigidbody2D>().velocity=new Vector2(0,Mathf.Sign(dy)*statComp.move_speed);
+                int dir;
+                if (Mathf.Sign(dy) == 1)
+                {
+                    dir = Random.Range(-3, 15);
+                    
+                    
+                }
+                else
+                {
+                    dir = Random.Range(-14, 4);
+                }
+                gameObject.GetComponent<Rigidbody2D>().velocity=new Vector2(0,Mathf.Sign(dir)*statComp.move_speed);
                 
             }
             

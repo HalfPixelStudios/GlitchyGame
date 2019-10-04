@@ -16,9 +16,11 @@ public class GlitchValue : MonoBehaviour
     {
         delta = 0;
         effects=new List<Effect>();
-        //effects.Add(new RotateEffect());
-        //effects.Add(new GravityEffect());
+        effects.Add(new RotateEffect());
+        effects.Add(new GravityEffect());
         effects.Add(new TeleportationEffect());
+        effects.Add(new MirrorEffect());
+        
 
     }
     void Update()
