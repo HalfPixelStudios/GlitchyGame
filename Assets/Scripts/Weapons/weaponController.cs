@@ -101,14 +101,11 @@ public class weaponController : MonoBehaviour {
 
 
     private void OnCollisionEnter2D(Collision2D other) { //if the weapon hits an object
-        if (owner != null&&other.gameObject!=owner)
-        {
-            Stats hp_comp = other.gameObject.GetComponent<Stats>();
-            if (hp_comp != null)
-            {
-                //if the object the projectile hit has a health bar
-                hp_comp.modHp(-1 * melee_damage);
-            }
+        
+
+        Stats hp_comp = other.gameObject.GetComponent<Stats>();
+        if (hp_comp != null) { //if the object the projectile hit has a health bar
+            hp_comp.modHp(-1 * melee_damage);
         }
     }
 }
