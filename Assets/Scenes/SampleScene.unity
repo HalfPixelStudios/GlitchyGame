@@ -1515,7 +1515,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a130a9532a2f671418ed691f6cae7976, type: 3}
-<<<<<<< HEAD
 --- !u!1001 &5438302176941796641
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1659,8 +1658,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecdddaec5a5b14b15a4f00f9f98cce1e, type: 3}
-=======
->>>>>>> parent of a7acd47... lmao conflictsss
 --- !u!1001 &7975362827093472670
 PrefabInstance:
   m_ObjectHideFlags: 0
