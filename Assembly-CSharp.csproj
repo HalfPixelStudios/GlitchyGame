@@ -58,6 +58,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\AI\devil_scout.cs" />
      <Compile Include="Assets\Scripts\AI\Enemy.cs" />
+     <Compile Include="Assets\Scripts\AI\shadowMage.cs" />
      <Compile Include="Assets\Scripts\AI\skeletController.cs" />
      <Compile Include="Assets\Scripts\Cam\cameraController.cs" />
      <Compile Include="Assets\Scripts\Coin.cs" />

@@ -99,6 +99,7 @@ MonoBehaviour:
   projectile: {fileID: 908329775496595671, guid: e9603907400473144a2e49484df28226,
     type: 3}
   owner: {fileID: 0}
+  isEnemy: 0
   orbit_radius: 0.8
   follow_offset_x: 0
   follow_offset_y: -0.5
