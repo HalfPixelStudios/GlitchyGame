@@ -7,12 +7,11 @@ using Random = UnityEngine.Random;
 
 public class skeletController : MonoBehaviour {
 
-    [Range(0f, 10f)] public float speed;
-
     private Animator anim;
     private Rigidbody2D body;
     private weaponSheath weapon_sheath;
     private bool isMoving = false; //start off in idle state
+    private Stats _stats;
 
     //AI vars
     private float moveDirect; //an angle measurement, in radians
@@ -23,6 +22,7 @@ public class skeletController : MonoBehaviour {
         anim = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
         weapon_sheath = GetComponent<weaponSheath>();
+        _stats = GetComponent<Stats>();
     }
 
     void Update() {
@@ -44,7 +44,7 @@ public class skeletController : MonoBehaviour {
         body.velocity = new Vector2(0, 0);
         //Check to see if there is actually input
         if (isMoving) {
-            body.velocity = new Vector2((float)(speed*Math.Cos(moveDirect)), (float)(speed*Math.Sin(moveDirect)));
+            body.velocity = new Vector2((float)(_stats.move_speed*Math.Cos(moveDirect)), (float)(_stats.move_speed*Math.Sin(moveDirect)));
         }
 
         weapon_sheath.weapon_angle = moveDirect; //point weapon in direction of movement for now
