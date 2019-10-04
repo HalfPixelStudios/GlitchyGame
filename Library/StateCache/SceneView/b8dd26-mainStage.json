@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-2.240109443664551,"y":-10.808905601501465,"z":-747.0731201171875},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":16.415342330932618,"orthographic":true}
+=======
 {"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-0.1060238629579544,"y":-1.2636717557907105,"z":-740.3031005859375},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":43.77206039428711,"orthographic":true}
+>>>>>>> parent of a7acd47... lmao conflictsss
