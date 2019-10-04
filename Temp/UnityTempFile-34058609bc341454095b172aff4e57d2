@@ -288,8 +288,10 @@
 /define:ENABLE_TIMELINE
 /define:CSHARP_7_OR_LATER
 /define:CSHARP_7_3_OR_NEWER
+"Assets/Scripts/AI/BossAI.cs"
 "Assets/Scripts/AI/devil_scout.cs"
 "Assets/Scripts/AI/Enemy.cs"
+"Assets/Scripts/AI/shadowMage.cs"
 "Assets/Scripts/AI/skeletController.cs"
 "Assets/Scripts/Cam/cameraController.cs"
 "Assets/Scripts/Coin.cs"
@@ -315,6 +317,7 @@
 "Assets/Scripts/Random/RotateEffect.cs"
 "Assets/Scripts/Random/TeleportationEffect.cs"
 "Assets/Scripts/Room.cs"
+"Assets/Scripts/SpawnPad.cs"
 "Assets/Scripts/Spikes.cs"
 "Assets/Scripts/Stats.cs"
 "Assets/Scripts/TileGenerator.cs"

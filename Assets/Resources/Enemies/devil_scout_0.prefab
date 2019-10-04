@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 7975362826323699450}
   - component: {fileID: 5644757991128962271}
   - component: {fileID: 1868900945457772357}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: devil_scout_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

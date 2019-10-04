@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4344208407174731789}
   - component: {fileID: 4344208407174731794}
   - component: {fileID: 4344208407174731798}
+  - component: {fileID: -4538975555070094932}
   m_Layer: 8
   m_Name: skelet_enemy
   m_TagString: Untagged
@@ -195,3 +196,20 @@ MonoBehaviour:
   baseHealth: 43
   currentHealth: 30
   move_speed: 3
+--- !u!114 &-4538975555070094932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4344208407174731785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2763ce17612d4b4ab7d4a2a96fb1d88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detected: 0
+  attack: 0
+  attack_range: 0
+  sight: 0
+  player: {fileID: 0}
