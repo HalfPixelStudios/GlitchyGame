@@ -7,9 +7,9 @@ public class playerController : MonoBehaviour {
 
     [Range(0f, 10f)] //Move this to player stat componenet later
 
+    private weaponSheath weapon_sheath;
     private Animator anim;
     private Rigidbody2D body;
-    private weaponSheath weapon_sheath;
     private Stats stats;
     [SerializeField] private bool isMoving;
 
@@ -47,11 +47,8 @@ public class playerController : MonoBehaviour {
         anim.SetFloat("Facing", facing);
         anim.SetBool("isMoving", isMoving);
 
-        //weapon stuff
+        //weapons stuff
         weapon_sheath.weapon_angle = mouse_angle;
-        if (Input.GetKeyDown("q")) {
-            GameObject weapon = GetComponent<weaponSheath>().equiped_weapon;
-            weapon.GetComponent<weaponController>().shootProjectile();
-        }
+
     }
 }

@@ -18,6 +18,7 @@ public class ChestDetector : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D other) {
         //show hovering arrow once player becomes within range
         arrow = Instantiate(Resources.Load("UI/dropped_item_arrow") as GameObject, new Vector3(transform.position.x + offset_x, transform.position.y + offset_y, transform.position.z), Quaternion.identity);
+        arrow.transform.parent = transform;
     }
 
     private void OnTriggerStay2D(Collider2D other) {
