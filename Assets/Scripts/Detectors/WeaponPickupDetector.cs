@@ -2,23 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class pickupDetector : MonoBehaviour {
+public class WeaponPickupDetector : MonoBehaviour {
 
-    [SerializeField] public GameObject weapon;
-    [Range(0f, 5f)] public float pickup_radius;
+    [Range(0f, 5f)] public float radius;
     [Range(-1f, 1f)] public float offset_x;
     [Range(-1f, 1f)] public float offset_y;
     private GameObject arrow;
 
     void Start() {
-        gameObject.GetComponent<CircleCollider2D>().radius = pickup_radius;
+        gameObject.GetComponent<CircleCollider2D>().radius = radius;
     }
 
     void Update() { }
 
-    private void OnTriggerEnter2D (Collider2D other) {
+    private void OnTriggerEnter2D(Collider2D other) {
         //show hovering arrow once player becomes within range
-        arrow = Instantiate(Resources.Load("UI/dropped_item_arrow") as GameObject, new Vector3(transform.position.x+offset_x,transform.position.y+offset_y,transform.position.z), transform.rotation);
+        arrow = Instantiate(Resources.Load("UI/dropped_item_arrow") as GameObject, new Vector3(transform.position.x + offset_x, transform.position.y + offset_y, transform.position.z), Quaternion.identity);
     }
 
     private void OnTriggerStay2D(Collider2D other) {
@@ -30,7 +29,7 @@ public class pickupDetector : MonoBehaviour {
                 old_weapon.set_drop_mode();
             }
 
-            weapon.GetComponent<weaponController>().set_pickup_mode(other.gameObject);
+            gameObject.transform.parent.GetComponent<weaponController>().set_pickup_mode(other.gameObject);
         }
     }
 

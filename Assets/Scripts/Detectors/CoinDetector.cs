@@ -3,13 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class magnetForce : MonoBehaviour {
+public class CoinDetector : MonoBehaviour {
 
     [Range(0f, 30f)] public float magnet_strength;
-    [Range(0f, 5f)] public float pickup_radius;
+    [Range(0f, 5f)] public float radius;
 
     void Start() {
-        gameObject.GetComponent<CircleCollider2D>().radius = pickup_radius;
+        gameObject.GetComponent<CircleCollider2D>().radius = radius;
     }
 
     void Update() {

@@ -5,14 +5,14 @@ using UnityEngine;
 
 public class weaponController : MonoBehaviour {
 
-    [Range(0f,200f)] public float melee_damage; //damage dealt when weapon hits entity
+    [Range(0f, 200f)] public float melee_damage; //damage dealt when weapon hits entity
     public GameObject projectile;
 
     public GameObject owner;
 
     [Header("Graphics")]
     [Range(-3f, 3f)] public float orbit_radius;
-    [Range(-1f,1f)] public float follow_offset_x;
+    [Range(-1f, 1f)] public float follow_offset_x;
     [Range(-1f, 1f)] public float follow_offset_y;
     [Range(0f, 360f)] public float angle_offset; //in degrees
 
@@ -26,7 +26,8 @@ public class weaponController : MonoBehaviour {
         //Physics.IgnoreCollision(owner.GetComponent<Collider>(), gameObject.GetComponent<Collider>());
         orbit_radius = 0.8f;
 
-        if (owner != null) { set_pickup_mode(owner);
+        if (owner != null) {
+            set_pickup_mode(owner);
         } else { set_drop_mode(); }
     }
 
@@ -62,7 +63,7 @@ public class weaponController : MonoBehaviour {
 
         //set equipped item as this weapon
         new_owner.GetComponent<weaponSheath>().equiped_weapon = this.gameObject;
-        
+
         gameObject.layer = LayerMask.NameToLayer("Weapons");
         //body.isKinematic = true;
         body.freezeRotation = false;
@@ -80,8 +81,9 @@ public class weaponController : MonoBehaviour {
         transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, 0f);
 
         //create an object that detects if an entity is within the pickup range
-        pickup = Instantiate(Resources.Load("Objects/pickup_detector") as GameObject, transform.position, transform.rotation);
-        pickup.GetComponent<pickupDetector>().weapon = this.gameObject;
+        pickup = Instantiate(Resources.Load("Objects/weapon_pickup_detector") as GameObject, transform.position, Quaternion.identity);
+        pickup.transform.parent = transform; //make pickup detector as child
+
     }
 
 
