@@ -86,7 +86,7 @@ public class weaponController : MonoBehaviour {
         transform.rotation = Quaternion.Euler(transform.rotation.x, transform.rotation.y, 0f);
 
         //create an object that detects if an entity is within the pickup range
-        pickup = Instantiate(Resources.Load("Objects/weapon_pickup_detector") as GameObject, transform.position, Quaternion.identity);
+        pickup = Instantiate(Resources.Load("Detectors/weapon_pickup_detector") as GameObject, transform.position, Quaternion.identity);
         pickup.transform.parent = transform; //make pickup detector as child
 
     }
