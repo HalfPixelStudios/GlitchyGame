@@ -22,7 +22,9 @@
           <e p="Golem.cs" t="Include" />
           <e p="magnetForce.cs" t="Include" />
           <e p="Map" t="Include">
-            <e p="mapGenerator.cs" t="Include" />
+            <e p="RoomEntrance.cs" t="Include" />
+            <e p="RoomExit.cs" t="Include" />
+            <e p="RoomInfo.cs" t="Include" />
           </e>
           <e p="pickupDetector.cs" t="Include" />
           <e p="Player" t="Include">
@@ -44,6 +46,7 @@
           <e p="Spikes.cs" t="Include" />
           <e p="Stats.cs" t="Include" />
           <e p="TileGenerator.cs" t="Include" />
+          <e p="TreasureChest.cs" t="Include" />
           <e p="Weapons" t="Include">
             <e p="meleeTrail.cs" t="Include" />
             <e p="weaponCharge.cs" t="Include" />
