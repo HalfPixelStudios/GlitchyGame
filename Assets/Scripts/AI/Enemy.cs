@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float dist=Mathf.Sqrt(gameObject.transform.position.sqrMagnitude+player.transform.position.sqrMagnitude);
+        float dist=Mathf.Sqrt(Mathf.Pow(gameObject.transform.position.x-player.transform.position.x,2)+Mathf.Pow(gameObject.transform.position.y-player.transform.position.y,2));
         if (dist < sight)
         {
             detected = true;

@@ -9,6 +9,7 @@ public class weaponController : MonoBehaviour {
     public GameObject projectile;
 
     public GameObject owner;
+    public bool isEnemy;
 
     [Header("Graphics")]
     [Range(-3f, 3f)] public float orbit_radius;
@@ -28,7 +29,7 @@ public class weaponController : MonoBehaviour {
         orbit_radius = 0.8f;
 
         if (owner != null) { set_pickup_mode(owner);
-        } else { set_drop_mode(); }
+        } else if(!isEnemy){ set_drop_mode(); }
         
         
     }
@@ -36,21 +37,28 @@ public class weaponController : MonoBehaviour {
     void Update() {
 
         if (owner != null) {
+            
 
             float weapon_angle = owner.GetComponent<weaponSheath>().weapon_angle; //change this to be more generic so it works with enemies too
 
             //rotate  weapon depending on where mouse is
             //float zrot = (float) Mathf.Lerp(transform.rotation.z,(float)(weapon_angle * 180 / Math.PI + angle_offset),mass);
-            transform.rotation = Quaternion.Euler((float)(transform.rotation.x * 180 / Math.PI), (float)(transform.rotation.y * 180 / Math.PI), (float)(weapon_angle * 180 / Math.PI + angle_offset));
+            transform.rotation = Quaternion.Euler((transform.rotation.x * 180 / Mathf.PI), (transform.rotation.y * 180 / Mathf.PI), (weapon_angle * 180 / Mathf.PI + angle_offset));
 
             //weapon 'orbits' owner
             //HARDCODED ORBIT RAIDUS AS 1 FOR NOW
-            float new_x = (float)(owner.transform.position.x + 1 * Math.Cos(weapon_angle) + follow_offset_x);
-            float new_y = (float)(owner.transform.position.y + 1 * Math.Sin(weapon_angle) + follow_offset_y);
+            float new_x = (float)(owner.transform.position.x + 1 * Mathf.Cos(weapon_angle) + follow_offset_x);
+            float new_y = (float)(owner.transform.position.y + 1 * Mathf.Sin(weapon_angle) + follow_offset_y);
             transform.position = new Vector3(new_x, new_y, owner.transform.position.z);
 
 
-        } else { //if weapon does not have an owner, display it as a dropped item
+        }
+        else if(isEnemy)
+        {
+            
+            
+        }
+        else { //if weapon does not have an owner, display it as a dropped item
             transform.Rotate(0, 4f, 0); //cheesy rotating effect
         }
         
@@ -93,6 +101,7 @@ public class weaponController : MonoBehaviour {
 
 
     private void OnCollisionEnter2D(Collision2D other) { //if the weapon hits an object
+        
 
         Stats hp_comp = other.gameObject.GetComponent<Stats>();
         if (hp_comp != null) { //if the object the projectile hit has a health bar

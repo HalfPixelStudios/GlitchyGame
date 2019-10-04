@@ -16,17 +16,20 @@
             <e p="cameraController.cs" t="Include" />
           </e>
           <e p="Coin.cs" t="Include" />
+          <e p="Detectors" t="Include">
+            <e p="ChestDetector.cs" t="Include" />
+            <e p="CoinDetector.cs" t="Include" />
+            <e p="WeaponPickupDetector.cs" t="Include" />
+          </e>
           <e p="DungeonGenerator.cs" t="Include" />
           <e p="echoTrail.cs" t="Include" />
           <e p="GlitchValue.cs" t="Include" />
           <e p="Golem.cs" t="Include" />
-          <e p="magnetForce.cs" t="Include" />
           <e p="Map" t="Include">
             <e p="RoomEntrance.cs" t="Include" />
             <e p="RoomExit.cs" t="Include" />
             <e p="RoomInfo.cs" t="Include" />
           </e>
-          <e p="pickupDetector.cs" t="Include" />
           <e p="Player" t="Include">
             <e p="inputHandler.cs" t="Include" />
             <e p="playerController.cs" t="Include" />
@@ -37,7 +40,9 @@
           <e p="Random" t="Include">
             <e p="Effect.cs" t="Include" />
             <e p="GravityEffect.cs" t="Include" />
+            <e p="MirrorEffect.cs" t="Include" />
             <e p="RandomGravity.cs" t="Include" />
+            <e p="RandomMirror.cs" t="Include" />
             <e p="RandomRotate.cs" t="Include" />
             <e p="RotateEffect.cs" t="Include" />
             <e p="TeleportationEffect.cs" t="Include" />

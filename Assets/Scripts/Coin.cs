@@ -15,6 +15,7 @@ public class Coin : MonoBehaviour {
     private void OnTriggerStay2D(Collider2D other) {
 
         if (Equals(other.gameObject.name, "player_knight_0")) {
+            other.gameObject.GetComponent<Stats>().modHp(value);
             Destroy(this.gameObject);
         }
 
